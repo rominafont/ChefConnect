@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@900&family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@600;900&family=Montserrat&display=swap');
 
 *{
     margin:0;
@@ -35,6 +34,7 @@ nav{
     color: #f6ebd7; 
     text-decoration: none;
     font-family: 'Gabarito';
+    font-weight: 900;
 }
 
 .header .logo{
@@ -120,4 +120,99 @@ nav{
     font-family: 'Gabarito';
     font-size: 50px;
     margin: 10%;
+}
+
+#bannerBeneficios{
+    padding: 10%;
+    background-color: #7dc08b;
+
+    display: flex;
+    justify-content: space-around;
+}
+
+#bannerBeneficios{
+    text-align: center;
+}
+
+#bannerBeneficios h3{
+    font-family: 'Gabarito', sans-serif;
+    font-weight: 600;
+    color: #f6ebd7;
+    margin-top: 20px;
+}
+
+
+.imgRounded{
+    margin: 2%;
+    width:300px;
+    height:300px;
+    border-radius:150px;
+    object-fit: cover; 
+    box-shadow:  1px 1px 4px #482b19;
+    background-color: white;
+}
+
+
+#bannerStories01 {
+    display: flex;
+    padding: 8%;
+    justify-content: space-between;
+}
+
+#bannerStories01 h1{
+    font-family: 'Gabarito';
+    font-weight: 900;
+    font-size: 60px;
+    margin: 5%;
+    margin-bottom: 10%;
+    color: #482b19;
+}
+
+#bannerStories01 p{
+    width: 600px;
+    margin: 5%;
+    font-size: 20px;
+}
+
+#bannerStories01 img{
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+}
+
+
+
+#bannerStories02 {
+    display: flex;
+    padding: 8%;
+    justify-content: space-between;
+}
+
+#bannerStories02 h1{
+    font-family: 'Gabarito';
+    font-weight: 900;
+    font-size: 60px;
+    margin: 5%;
+    margin-bottom: 10%;
+    color: #482b19;
+    text-align: right;
+}
+
+#bannerStories02 p{
+    width: 600px;
+    margin: 5%;
+    font-size: 20px;
+    text-align: right;
+}
+
+#bannerStories02 img{
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+}
+
+#bannerDesafios{
+    width: 100%;
+    height: 100%;
+    background-image: url(img/bg_banner-01.svg);
 }
