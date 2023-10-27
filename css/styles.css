@@ -33,7 +33,8 @@ nav{
 .logo{
     color: #f6ebd7; 
     text-decoration: none;
-    font-family: 'Gabarito';
+    font-family: 'Gabarito' sans-serif
+    ;
     font-weight: 900;
 }
 
@@ -90,6 +91,7 @@ nav{
     border-radius: 50px;
     transition: all 0.3 ease 0s;
     cursor: pointer;
+    box-shadow:  none;
 }
 
 .header .btn button:hover{
@@ -118,8 +120,10 @@ nav{
 
 #bannerRegistro h1{
     font-family: 'Gabarito';
+    font-weight: 900;
     font-size: 50px;
     margin: 10%;
+    color: #482b19;
 }
 
 #bannerBeneficios{
@@ -212,7 +216,157 @@ nav{
 }
 
 #bannerDesafios{
-    width: 100%;
-    height: 100%;
-    background-image: url(img/bg_banner-01.svg);
+    padding: 10%;
+    text-align: center;
+    background-image: url(../img/bg_bannerDesafios.svg);
+    
+}
+
+#bannerDesafios h2{
+    font-family: 'Gabarito';
+    font-weight: 900;
+    font-size: 40px;
+    color: #482b19;
+    text-align: center;
+    margin: 5%;
+    margin: 50px; 
+}
+
+#cardContainer{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+}
+
+.card{
+    width: 30%;
+    height: auto;
+    background-color: #482b19;
+    color: #f6ebd7;
+    border-radius: 25px;
+    box-shadow:  1px 1px 4px #482b19;
+}
+
+.card h3{
+    margin: 4%;
+    margin-top: 7%;
+    font-family: 'Gabarito';
+    font-weight: 300;
+    font-size: 25px;
+}
+
+.card p{
+    margin: 5%;
+    margin-top: 2%;
+    padding: 5%;
+}
+
+#cardDesafio01{
+    background-image: url(../img/img22.jpg); 
+    height: 200px;
+    width:auto;
+    background-size: cover;
+    border-top-right-radius: 25px ;
+    border-top-left-radius: 25px;
+}
+
+#cardDesafio02{
+    background-image: url(../img/img23.jpg); 
+    height: 200px;
+    width:auto;
+    background-size: cover;
+    border-top-right-radius: 25px ;
+    border-top-left-radius: 25px;
+}
+
+#cardDesafio03{
+    background-image: url(../img/img06.jpg); 
+    height: 200px;
+    width:auto;
+    background-size: cover;
+    border-top-right-radius: 25px ;
+    border-top-left-radius: 25px;
+}
+
+#bannerDesafios{
+    padding: 10%;
+    text-align: center;
+}
+
+#bannerRecetas {
+    font-family: 'Gabarito';
+    font-weight: 900;
+    font-size: 40px;
+    color: #482b19;
+    text-align: center;
+    margin: 5%;
+    margin: 50px; 
+    margin-bottom: 100px;
+}
+
+#cardRecetas{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    font-size: 70px;
+    margin:5%
+}
+
+#cardReceta01{
+    background-image: url(../img/img10.jpg);
+    height: 500px;
+    width:25%;
+    background-size: cover;
+    border-radius: 25px;
+    text-align: center;
+    padding-top:200px ;
+    box-shadow:  1px 1px 4px #a39a94;
+}
+
+#cardReceta02{
+    background-image: url(../img/img11.jpg);
+    height: 500px;
+    width:25%;
+    background-size: cover;
+    border-radius: 25px;
+    text-align: center;
+    padding-top:200px ;
+    box-shadow:  1px 1px 4px #a39a94;
+}
+
+#cardReceta03{
+    background-image: url(../img/img14.jpg);
+    height: 500px;
+    width:25%;
+    background-size: cover;
+    border-radius: 25px;
+    text-align: center;
+    padding-top:200px ;
+    box-shadow:  1px 1px 4px #a39a94;
+}
+
+button{
+    font-size: 15px;
+    font-family: 'Montserrat';
+    color: #f6ebd7;
+    margin: 4%;
+    padding: 3%;
+    background-color: #fec037;
+    border: none ;
+    border-radius: 50px;
+    transition: all 0.3 ease 0s;
+    cursor: pointer; 
+    box-shadow:  1px 1px 4px #a39a94;
+    
+}
+
+.footer{
+    background-color: #482b19;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100px;
+    padding: 5px, 10%;
 }
