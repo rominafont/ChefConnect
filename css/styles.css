@@ -437,7 +437,7 @@ button{
 
 
 
-/*Buscador*/
+/*Página Explorar*/
 
 #bannerBuscar{
     display: flex;
@@ -464,6 +464,7 @@ button{
     border: 1px solid #f6ebd7;
     border-radius: 30px;
     transition: all 0.6s ease;
+    font-family: 'Montserrat';
 }
 
 .buscar i{
@@ -581,6 +582,118 @@ button{
 
 #cardReceta10{
     background-image: url(../img/img13.jpg); 
+    height: 200px;
+    width:auto;
+    background-size: cover;
+    border-top-right-radius: 25px ;
+    border-top-left-radius: 25px;
+}
+
+/*Página Politica Privacidad*/
+
+#privacidad{
+    margin: 5%;
+    padding: 5%;
+    text-align: justify;
+    color: #482b19;
+}
+
+#privacidad h1{
+    font-family: 'Gabarito';
+    font-weight: 900;
+    margin: 2%;
+}
+
+#privacidad h3{
+    font-family: 'Gabarito';
+    font-weight: 600;
+    margin: 2%;
+}
+
+/*Página Desafios*/
+
+#buscador{
+    display: flex;
+    align-items: center;
+    color: #f6ebd7;
+}
+
+.barraBuscar{
+    background: #fec037;
+    width: 90%;
+    max-width: 650px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    border-radius: 30px;
+    height: 50px;
+   margin-left: 30%;
+    margin-top: 100px;
+    
+}
+
+.barraBuscar input{
+    flex: 1;
+    padding: 15px 10px;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    font-size: 20px;
+    font-family: 'Montserrat';
+}
+
+.barraBuscar button i{
+    width: 25px;
+}
+
+.barraBuscar button{
+   padding: 10px 12px;
+   border: 0;
+   outline: 0;
+   background: #7dc08b;
+   cursor: pointer;
+}
+
+#bannerDesafiosOFF{
+    padding: 10%;
+    text-align: center;
+}
+
+#bannerDesafiosOFF h2{
+    font-family: 'Gabarito';
+    font-weight: 900;
+    font-size: 40px;
+    color: #482b19;
+    text-align: center;
+    margin: 5%;
+}
+
+#bannerDesafiosOFF h3{
+    font-size: 20px;
+    text-align: center;
+    margin: 20px 
+}
+
+#cardDesafio04{
+    background-image: url(../img/img01.jpg); 
+    height: 200px;
+    width:auto;
+    background-size: cover;
+    border-top-right-radius: 25px ;
+    border-top-left-radius: 25px;
+}
+
+#cardDesafio05{
+    background-image: url(../img/img08.jpg); 
+    height: 200px;
+    width:auto;
+    background-size: cover;
+    border-top-right-radius: 25px ;
+    border-top-left-radius: 25px;
+}
+
+#cardDesafio06{
+    background-image: url(../img/img15.jpg); 
     height: 200px;
     width:auto;
     background-size: cover;
