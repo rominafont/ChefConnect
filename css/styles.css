@@ -12,6 +12,7 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+/*Header - Menú Superior*/
 .header{
     background-color: #482b19;
     display: flex;
@@ -30,11 +31,10 @@ nav{
     color: #f6ebd7;
 }
 
-.logo{
+#logo{
     color: #f6ebd7; 
     text-decoration: none;
-    font-family: 'Gabarito' sans-serif
-    ;
+    font-family: 'Gabarito';
     font-weight: 900;
 }
 
@@ -102,7 +102,6 @@ nav{
 
 #bannerRegistro{
     display: flex;
-
 }
 
 #bannerRegistro img{
@@ -129,7 +128,6 @@ nav{
 #bannerBeneficios{
     padding: 10%;
     background-color: #7dc08b;
-
     display: flex;
     justify-content: space-around;
 }
@@ -145,7 +143,6 @@ nav{
     margin-top: 20px;
 }
 
-
 .imgRounded{
     margin: 2%;
     width:300px;
@@ -155,7 +152,6 @@ nav{
     box-shadow:  1px 1px 4px #482b19;
     background-color: white;
 }
-
 
 #bannerStories01 {
     display: flex;
@@ -183,8 +179,6 @@ nav{
     height: 500px;
     object-fit: cover;
 }
-
-
 
 #bannerStories02 {
     display: flex;
@@ -219,7 +213,6 @@ nav{
     padding: 10%;
     text-align: center;
     background-image: url(../img/bg_bannerDesafios.svg);
-    
 }
 
 #bannerDesafios h2{
@@ -359,14 +352,76 @@ button{
     transition: all 0.3 ease 0s;
     cursor: pointer; 
     box-shadow:  1px 1px 4px #a39a94;
-    
 }
 
-.footer{
+/*Header - Menú Superior*/
+footer{
     background-color: #482b19;
+    margin-bottom: 0;
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    height: 100px;
+    height: 200px;
     padding: 5px, 10%;
+}
+
+footer #logo{
+    height: 70px;
+    width: auto;
+    margin: 2%;
+    margin-right: auto;
+    padding: 2%;
+    font-size: 40px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+footer .logo:hover{
+    transform: scale(1.2);
+}
+
+footer a{
+    color: #f6ebd7;
+}
+
+footer .menuBottom a:hover{
+    color: #7dc08b;
+    transform: scale(1.1);
+}
+
+footer .menuBottom{
+    list-style: none;
+    font-size: 18px;
+}
+
+footer .menuBottom li{
+    display: inline;
+    padding: 0 20px;
+}
+
+footer .menuBottom a{
+   font-size: 700;
+   text-decoration: none; 
+}
+
+footer .btn button{
+    font-size: 18px;
+    font-family: 'Montserrat';
+    width: 170px;
+    color: #f6ebd7;
+    padding: 5%;
+    margin: 10%;
+    margin-left: 5%;
+    background-color: #7dc08b;
+    border: none ;
+    border-radius: 50px;
+    transition: all 0.3 ease 0s;
+    cursor: pointer;
+    box-shadow:  none;
+}
+
+footer .btn button:hover{
+    background-color: #f6ebd7;
+    color: #7dc08b;
+    /*transform: scale(1.1);*/
 }
