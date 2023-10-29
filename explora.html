@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explora - ChefConnect</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <!--Header - Menú Superior/Inicio Sesión-->
+    <header class="header"> 
+        <div id="logo">
+            <a href="./index.html">ChefConnect!</a>
+        </div>
+        <nav class="menuTop">
+            <ul>
+                <li><a href="./explora.html">Explora</a></li>
+                <li><a href="#">Desafios</a></li>
+                <li><a href="#">Eventos</a></li>
+            </ul>
+            <a href="perfil.html" id="perfil">
+                <img src="img/img27.jpg" alt="Lara Rodríguez" class='imgRounded'></a>
+        </nav>
+    </header>
+    
+    <section id="bannerBuscar">
+        <div class="buscar">
+            <input type="text" placeholder="Buscar" required>
+            <div>
+                <i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i>
+            </div>
+        </div>
+        <div class="filtros">
+            <a href="#veg"><button>Vegano</button></a>
+            <a href="#rapido"><button>Rápido</button></a>
+            <a href="#asiatico"><button>Asiático</button></a>
+        </div>
+    </section>
+
+    <section id="rapido">
+        <div id="cardRecetas">
+            <div class="card">
+                <div>
+                    <div id="cardReceta04"></div>
+                    <div> <h3>Pasta Vegetal</h3>
+                        <div class="atributosReceta">
+                            <p>nivel: <i class="fa-solid fa-fire" style="color: #f6ebd7;"></i></p>
+                            <p>VEG</p>
+                            <p>15 min <i class="fa-solid fa-stopwatch" style="color: #f6ebd7;"></i></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div>
+                    <div id="cardReceta05"></div>
+                    <div> <h3>Pollo con Salsa de Cacahuete</h3>
+                        <div class="atributosReceta">
+                            <p>nivel: <i class="fa-solid fa-fire" style="color: #f6ebd7;"></i></p>
+                            <p>Keto</p>
+                            <p>15 min <i class="fa-solid fa-stopwatch" style="color: #f6ebd7;"></i></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div>
+                    <div id="cardReceta06"></div>
+                    <div> <h3>Pizza a la sartén</h3>
+                        <div class="atributosReceta">
+                            <p>nivel: <i class="fa-solid fa-fire" style="color: #f6ebd7;"></i></p>
+                            <p>VEG</p>
+                            <p>15 min <i class="fa-solid fa-stopwatch" style="color: #f6ebd7;"></i></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="veg">
+        <div id="cardRecetas">
+            <div class="card">
+                <div>
+                    <div id="cardReceta07"></div>
+                    <div> <h3>Tortitas de Avena</h3>
+                        <div class="atributosReceta">
+                            <p>nivel: <i class="fa-solid fa-fire" style="color: #f6ebd7;"></i> <i class="fa-solid fa-fire" style="color: #f6ebd7;"></i></p>
+                            <p>VEG</p>
+                            <p>20 min <i class="fa-solid fa-stopwatch" style="color: #f6ebd7;"></i></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div>
+                    <div id="cardReceta08"></div>
+                    <div> <h3>Calabaza Asada</h3>
+                        <div class="atributosReceta">
+                            <p>nivel: <i class="fa-solid fa-fire" style="color: #f6ebd7;"></i></p>
+                            <p>VEG</p>
+                            <p>40 min <i class="fa-solid fa-stopwatch" style="color: #f6ebd7;"></i></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div>
+                    <div id="cardReceta04"></div>
+                    <div> <h3>Pasta Vegetal</h3>
+                        <div class="atributosReceta">
+                            <p>nivel: <i class="fa-solid fa-fire" style="color: #f6ebd7;"></i></p>
+                            <p>VEG</p>
+                            <p>15 min <i class="fa-solid fa-stopwatch" style="color: #f6ebd7;"></i></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="asiatico">
+        <div id="cardRecetas">
+            <div class="card">
+                <div>
+                    <div id="cardReceta09"></div>
+                    <div> <h3>Ramen Picante</h3>
+                        <div class="atributosReceta">
+                            <p>nivel: <i class="fa-solid fa-fire" style="color: #f6ebd7;"></i> <i class="fa-solid fa-fire" style="color: #f6ebd7;"></i> <i class="fa-solid fa-fire" style="color: #f6ebd7;"></i></p>
+                            <p>Picante</p>
+                            <p>120 min <i class="fa-solid fa-stopwatch" style="color: #f6ebd7;"></i></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div>
+                    <div id="cardReceta10"></div>
+                    <div> <h3>Poke con Gambas</h3>
+                        <div class="atributosReceta">
+                            <p>nivel: <i class="fa-solid fa-fire" style="color: #f6ebd7;"></i> <i class="fa-solid fa-fire" style="color: #f6ebd7;"></i></p>
+                            <p>Gourmet</p>
+                            <p>12 min <i class="fa-solid fa-stopwatch" style="color: #f6ebd7;"></i></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div>
+                    <div id="cardReceta05"></div>
+                    <div> <h3>Pollo con Salsa de Cacahuete</h3>
+                        <div class="atributosReceta">
+                            <p>nivel: <i class="fa-solid fa-fire" style="color: #f6ebd7;"></i></p>
+                            <p>Keto</p>
+                            <p>15 min <i class="fa-solid fa-stopwatch" style="color: #f6ebd7;"></i></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Footer - Menú Inferior
+    <footer>
+        <div id="logo">
+            <a href="./index.html">ChefConnect!</a>
+        </div>
+        <nav class="menuBottom">
+            <ul>
+                <li><a href="./explora.html">Explora</a></li>
+                <li><a href="#">Desafios</a></li>
+                <li><a href="#">Eventos</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Política de Privacidad</a></li>
+            </ul>
+            <div id="socialmedia">
+                <i class="fa-brands fa-instagram fa-lg" style="color: #f6ebd7;"></i>
+                <i class="fa-brands fa-youtube fa-lg" style="color: #f6ebd7;"></i>
+                <i class="fa-brands fa-facebook fa-lg" style="color: #f6ebd7;"></i>
+                <a href="https://github.com/rominafont/ChefConnect" target="_blank"><i class="fa-brands fa-github fa-lg" style="color: #fec037;"></i> </a>
+            </div>
+        </nav> 
+    </footer>-->
+</body>
+</html>
