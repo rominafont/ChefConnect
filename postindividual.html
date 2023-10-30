@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />);
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@600;900&family=Montserrat&display=swap');
+    
+    *{
+        margin:0;
+        padding: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+    }
+    
+    body {
+        background-color:#f6ebd7;
+        font-family: 'Montserrat', sans-serif;
+    }
+    
+    .header{
+        background-color: #482b19;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        height: 100px;
+        padding: 5px, 10%;
+    }
+    
+    nav{
+        display: flex;
+        align-items: center;
+        padding-top: 20px;
+        padding-left: 5%;
+        padding-right: 5%;
+        color: #f6ebd7;
+    }
+    
+    .logo{
+        color: #f6ebd7; 
+        text-decoration: none;
+        font-family: 'Gabarito';
+    }
+    
+    .header .logo{
+        height: 70px;
+        width: auto;
+        margin: 2%;
+        margin-right: auto;
+        margin-top: auto;
+        padding: 2%;
+        font-size: 40px;
+        cursor: pointer;
+        transition: all 0.3s;
+    }
+    
+    .header .logo:hover{
+        transform: scale(1.2);
+    }
+    
+    .header a{
+        color: #f6ebd7;
+    }
+    
+    .header .menuTop a:hover{
+        color: #7dc08b;
+        transform: scale(1.1);
+    }
+    
+    .header .menuTop{
+        list-style: none;
+        font-size: 18px;
+    }
+    
+    .header .menuTop li{
+        display: inline;
+        padding: 0 20px;
+    }
+    
+    .header .menuTop a{
+       font-size: 700;
+       text-decoration: none; 
+    }
+    
+    .header .btn button{
+        font-size: 18px;
+        font-family: 'Montserrat';
+        width: 170px;
+        color: #f6ebd7;
+        padding: 5%;
+        margin: 10%;
+        margin-left: 5%;
+        background-color: #7dc08b;
+        border: none ;
+        border-radius: 50px;
+        transition: all 0.3 ease 0s;
+        cursor: pointer;
+    }
+    
+    .header .btn button:hover{
+        background-color: #f6ebd7;
+        color: #7dc08b;
+        /*transform: scale(1.1);*/
+    }
+
+    
+
+    .caja-post {
+        font-family: "gabarito";
+    font-weight:300;
+     width: 800px;
+    height: 500px;  
+    background-color: rgba(255, 255, 255, 0.9);
+    z-index: 1;
+    text-align: center;
+    padding-top: 5px;
+    border-radius: 23px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%, -50%);
+    margin-top: 30px;
+    margin-bottom: 0%;
+    flex-direction:row;  
+    }
+
+    .mantel {
+    width: 100%;
+    height: 100%;
+    margin-top: 130px;
+    }
+
+    .imagen-post {
+    width: 50%;    
+    height: 50%;
+    margin-left: -370px;
+    margin-top: 4px;
+    border-radius: 9px;
+    }
+
+    .caja-contenido {
+    width: 370px;
+    height: 485px;    
+    margin-top: -485px;
+    margin-left: 420px;
+    border-radius: 20px;
+    }
+
+    .usuario {
+    flex-direction: row;
+    justify-content: flex-start;
+    } 
+
+    .fotousuario{
+    width: 15%;
+    height: 15%; 
+    margin-left: -250px;
+    margin-top: 20px;
+    }
+
+    .nombre {
+    margin-top: -40px;
+    margin-left: -70px;
+    font-family: Montserrat; 
+    }
+
+    .explorar{
+    text-align: center;  
+    position: absolute;
+    margin-left: 45%;
+    margin-top: 100px;
+    font-family: Gabarito;
+    font-weight: bold;
+    font-size: larger;
+    }
+
+    .comida {
+    margin-top: -380px;
+    margin-left: 360px;
+    font-family: Gabarito;
+    s
+    }
+
+    .lineausuario {
+    margin-top: 25px;  
+    }
+
+    .ingredientes { 
+     width: 320px;
+     height: 270px;
+     margin-left: 450px;
+     margin-top: 50px;
+
+    }
+
+    
+
+  
+</style>
+</head>
+<body>
+    <header class="header"> 
+        <div class="logo">
+            <a href="./index.html">ChefConnect!</a>
+        </div>
+        <nav class="menuTop">
+            <ul>
+                <li><a href="#">Explora</a></li>
+                <li><a href="#">Desafios</a></li>
+                <li><a href="#">Eventos</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Política de Privacidad</a></li>
+            </ul>
+            <a href="#" class="btn"><button>Inicio Sesión</button></a>
+        </nav>
+    </header> 
+    <img class="mantel" src="img/mantel web.png" alt="manel">
+    <div class="caja-post">
+        <div>
+            <img class="imagen-post" src="img/img13.jpg" alt="comida">
+        </div>
+        
+        <div class="caja-contenido">
+        <div class="usuario">
+            <img class="fotousuario" src="img/Recurso 1.png" alt="ussuario">
+            <div class="nombre">@Javicuevas</div>
+            <hr class="lineausuario">
+        </div>
+        </div>
+        <div class="comida">
+            Ensalada de pechuga con aguacate 
+           </div>
+        <div class="ingredientes">
+        1 Pechuga de pollo  
+        
+        </div>   
+
+    </div>
+    <div class="explorar">
+        Más que cocinar
+    </div>
+</body>
+</html>
