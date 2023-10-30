@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Manos a la Obra! - ChaefConnect</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+  <!--Header - Menú Superior/Inicio Sesión-->
+    <header class="header"> 
+        <div id="logo">
+            <a href="./index.html">ChefConnect!</a>
+        </div>
+        <nav class="menuTop">
+            <ul>
+                <li><a href="./explorar.html">Explora</a></li>
+                <li><a href="./desafios.html">Desafios</a></li>
+                <li><a href="./eventos.html">Eventos</a></li>
+            </ul>
+            <a href="perfil.html" id="perfil">
+                <img src="img/img27.jpg" alt="Lara Rodríguez" class='imgRounded'></a>
+        </nav>
+    </header>
+    <section id="uploadContainer">
+        <form action="index.html" method="get">
+            <h2>Comparte tus mejores creaciones</h2>
+            <fieldset>
+                <label for="receta">Título de la receta:</label><br>
+                <input type="text" id="receta" name="titulo_receta"><br>
+
+                <label for="ingredientesReceta">Ingredientes:</label><br>
+                <textarea id="ingredientesReceta" name="ingredientesReceta"></textarea><br>
+
+                <label for="pasosReceta">Pasos:</label><br>
+                <textarea id="pasosReceta" name="pasosReceta"></textarea>
+
+                <label for="dificultadReceta">Dificultad:</label><br>
+                <radio id="dificultadReceta" name="dificultadReceta"></textarea>
+                
+                <label for="time">Duración:</label><br>
+                <input type="time" id="duracion" name="duracion_receta"><br>
+
+                <span class="dificultad">Nivel:</span><br>
+                    <input type="radio" id="dificultadReceta" value="1" name="facil" checked>
+                    <label for="dificultadReceta" class="dificultad"><i class="fa-solid fa-fire" style="color: #9b0b0b;"></i></label><br>
+                    <input type="radio" id="dificultadReceta" value="2" name="medio">
+                    <label for="dificultadReceta" class="dificultad"><i class="fa-solid fa-fire" style="color: #9b0b0b;"></i> <i class="fa-solid fa-fire" style="color: #9b0b0b;"></i></label><br>
+                    <input type="radio" id="dificultadReceta" value="3" name="dificil">
+                    <label for="dificultadReceta" class="dificultad"><i class="fa-solid fa-fire" style="color: #9b0b0b;"></i> <i class="fa-solid fa-fire" style="color: #9b0b0b;"></i> <i class="fa-solid fa-fire" style="color: #9b0b0b;"></i></label><br>
+
+            </fieldset>
+        </form>
+        
+    </section>
+
+</body>
+</html>
