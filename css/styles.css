@@ -319,6 +319,7 @@ footer .btn button:hover{
     color: #f6ebd7;
     border-radius: 25px;
     box-shadow:  1px 1px 4px #482b19;
+    margin: 30px;
 }
 
 .card h3{
@@ -694,6 +695,68 @@ button{
 
 #cardDesafio06{
     background-image: url(../img/img15.jpg); 
+    height: 200px;
+    width:auto;
+    background-size: cover;
+    border-top-right-radius: 25px ;
+    border-top-left-radius: 25px;
+}
+
+/*Página Eventos*/
+#bannerEventos{
+    padding: 10%;
+    text-align: center;
+    margin: 20px;
+}
+
+#cardEvento01{
+    background-image: url(../img/img32.jpg); 
+    height: 200px;
+    width:auto;
+    background-size: cover;
+    border-top-right-radius: 25px ;
+    border-top-left-radius: 25px;
+    margintop: 3;
+}
+
+#cardEvento02{
+    background-image: url(../img/img36.jpg); 
+    height: 200px;
+    width:auto;
+    background-size: cover;
+    border-top-right-radius: 25px ;
+    border-top-left-radius: 25px;
+}
+
+#cardEvento03{
+    background-image: url(../img/img33.jpg); 
+    height: 200px;
+    width:auto;
+    background-size: cover;
+    border-top-right-radius: 25px ;
+    border-top-left-radius: 25px;
+}
+
+#cardEvento04{
+    background-image: url(../img/img31.jpg); 
+    height: 200px;
+    width:auto;
+    background-size: cover;
+    border-top-right-radius: 25px ;
+    border-top-left-radius: 25px;
+}
+
+#cardEvento05{
+    background-image: url(../img/img29.jpg); 
+    height: 200px;
+    width:auto;
+    background-size: cover;
+    border-top-right-radius: 25px ;
+    border-top-left-radius: 25px;
+}
+
+#cardEvento06{
+    background-image: url(../img/img25.jpg); 
     height: 200px;
     width:auto;
     background-size: cover;

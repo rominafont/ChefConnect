@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos - ChefConnect</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <!--Header - Menú Superior/Inicio Sesión-->
+    <header class="header"> 
+        <div id="logo">
+            <a href="./index.html">ChefConnect!</a>
+        </div>
+        <nav class="menuTop">
+            <ul>
+                <li><a href="./explorar.html">Explora</a></li>
+                <li><a href="./desafios.html">Desafios</a></li>
+                <li><a href="./eventos.html">Eventos</a></li>
+            </ul>
+            <a href="perfil.html" id="perfil">
+                <img src="img/img27.jpg" alt="Lara Rodríguez" class='imgRounded'></a>
+        </nav>
+    </header>
+
+    <section id="bannerBuscar">
+        <div class="buscar">
+            <input type="text" placeholder="Feria Vegana" required>
+            <div>
+                <i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i>
+            </div>
+        </div>
+        <div class="filtros">
+            <a href="#vivo"><button>Cocina en Vivo</button></a>
+            <a href="#feria"><button>Mercados y Ferias</button></a>
+        </div>
+    </section>
+
+    <div id="buscador">
+        <form class="barraBuscar">
+            <input type="text" placeholder="Plan Valencia Noviembre">
+            <button type="submit"><i class="fa-solid fa-location-dot" style="color: #ffffff;"></i></button>
+            </div>
+        </form>
+    </div>
+    <section id="bannerEventos">
+        <section id="vivo">
+            <div id="cardContainer">
+                <div class="card">
+                    <div>
+                        <div id="cardEvento01"></div>
+                        <div> <h3>Ahora les toca a los Peques</h3>
+                            <p>Clase cocina en vivo para crear la receta perfecta acompañado de tu mini tú!</p>
+                            <div class="atributosEvento">
+                                <p><i class="fa-solid fa-calendar-days" style="color: #f6ebd7;"></i> 11/11 </p>
+                                <p><i class="fa-solid fa-location-dot" style="color: #f6ebd7;"></i> Alicante</p>
+                                <p><i class="fa-solid fa-coins" style="color: #f6ebd7;"></i> 15€</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <div id="cardEvento02"></div>
+                        <div> <h3>Aprende a Conservar!</h3>
+                            <p>Curso de cocina en vivo para aprender a crear conservas, como mermeladas y encurtidos. </p>
+                            <div class="atributosEvento">
+                                <p><i class="fa-solid fa-calendar-days" style="color: #f6ebd7;"></i> 20-22 de Enero </p>
+                                <p><i class="fa-solid fa-location-dot" style="color: #f6ebd7;"></i> Valencia</p>
+                                <p><i class="fa-solid fa-coins" style="color: #f6ebd7;"></i> 85€</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <div id="cardEvento03"></div>
+                        <div> <h3>Los básicos de la Repostería</h3>
+                            <p>Clase diseñada para principiantes en el dulce mundo culinario.</p>
+                            <div class="atributosEvento">
+                                <p><i class="fa-solid fa-calendar-days" style="color: #f6ebd7;"></i> Próximo Febrero </p>
+                                <p><i class="fa-solid fa-location-dot" style="color: #f6ebd7;"></i> Cádiz</p>
+                                <p><i class="fa-solid fa-coins" style="color: #f6ebd7;"></i> 40€</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="feria">
+            <div id="cardContainer">
+                <div class="card">
+                    <div>
+                        <div id="cardEvento04"></div>
+                        <div> <h3>Cosecha de la Manzana</h3>
+                            <p>Mercado de productos hechos a base con las manzanas de la huerta Luna de Tarragona.</p>
+                            <div class="atributosEvento">
+                                <p><i class="fa-solid fa-calendar-days" style="color: #f6ebd7;"></i> 13/12 </p>
+                                <p><i class="fa-solid fa-location-dot" style="color: #f6ebd7;"></i> Tarragona</p>
+                                <p><i class="fa-solid fa-coins" style="color: #f6ebd7;"></i> Entrada Gratuita</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <div id="cardEvento05"></div>
+                        <div> <h3>Aprende a Conservar!</h3>
+                            <p>Curso de cocina en vivo para aprender a crear conservas, como mermeladas y encurtidos. </p>
+                            <div class="atributosEvento">
+                                <p><i class="fa-solid fa-calendar-days" style="color: #f6ebd7;"></i> 20-22 de Enero </p>
+                                <p><i class="fa-solid fa-location-dot" style="color: #f6ebd7;"></i> Valencia</p>
+                                <p><i class="fa-solid fa-coins" style="color: #f6ebd7;"></i> 85€</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <div id="cardEvento06"></div>
+                        <div> <h3>Los básicos de la Repostería</h3>
+                            <p>Clase diseñada para principiantes en el dulce mundo culinario.</p>
+                            <div class="atributosEvento">
+                                <p><i class="fa-solid fa-calendar-days" style="color: #f6ebd7;"></i> Próximo Febrero </p>
+                                <p><i class="fa-solid fa-location-dot" style="color: #f6ebd7;"></i> Cádiz</p>
+                                <p><i class="fa-solid fa-coins" style="color: #f6ebd7;"></i> 40€</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </section>
+
+    <!--Footer - Menú Inferior -->
+    <footer>
+        <div id="logo">
+            <a href="./index.html">ChefConnect!</a>
+        </div>
+        <nav class="menuBottom">
+            <ul>
+                <li><a href="./explorar.html">Explora</a></li>
+                <li><a href="./desafios.html">Desafios</a></li>
+                <li><a href="./eventos.html">Eventos</a></li>
+                <li><a target="_blank" href="./faq.html">FAQ</a></li>
+                <li><a target="_blank" href="./privacidad.html">Política de Privacidad</a></li>
+            </ul>
+            <div id="socialmedia">
+                <i class="fa-brands fa-instagram fa-lg" style="color: #f6ebd7;"></i>
+                <i class="fa-brands fa-youtube fa-lg" style="color: #f6ebd7;"></i>
+                <i class="fa-brands fa-facebook fa-lg" style="color: #f6ebd7;"></i>
+                <a href="https://github.com/rominafont/ChefConnect" target="_blank"><i class="fa-brands fa-github fa-lg" style="color: #fec037;"></i> </a>
+            </div>
+        </nav> 
+    </footer>
+    
+</body>
+</html>
