@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@900&family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@600;900&family=Montserrat&display=swap');
 
 *{
     margin:0;
@@ -13,6 +12,7 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+/*Header - Menú Superior*/
 .header{
     background-color: #482b19;
     display: flex;
@@ -31,13 +31,14 @@ nav{
     color: #f6ebd7;
 }
 
-.logo{
+#logo{
     color: #f6ebd7; 
     text-decoration: none;
     font-family: 'Gabarito';
+    font-weight: 900;
 }
 
-.header .logo{
+.header #logo{
     height: 70px;
     width: auto;
     margin: 2%;
@@ -90,6 +91,7 @@ nav{
     border-radius: 50px;
     transition: all 0.3 ease 0s;
     cursor: pointer;
+    box-shadow:  none;
 }
 
 .header .btn button:hover{
@@ -98,9 +100,88 @@ nav{
     /*transform: scale(1.1);*/
 }
 
+.header .imgRounded{
+    width: 70px;
+    height: 70px;
+}
+
+
+/*Footer - Menú Inferior*/
+footer{
+    background-color: #482b19;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 200px;
+    padding: 5px, 10%;
+}
+
+footer #logo{
+    height: 70px;
+    width: auto;
+    margin: 2%;
+    margin-right: auto;
+    padding: 2%;
+    font-size: 40px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+footer .logo:hover{
+    transform: scale(1.2);
+}
+
+footer a{
+    color: #f6ebd7;
+}
+
+footer .menuBottom a:hover{
+    color: #7dc08b;
+    transform: scale(1.1);
+}
+
+footer .menuBottom{
+    list-style: none;
+    font-size: 18px;
+}
+
+footer .menuBottom li{
+    display: inline;
+    padding: 0 20px;
+}
+
+footer .menuBottom a{
+   font-size: 700;
+   text-decoration: none; 
+}
+
+footer .btn button{
+    font-size: 18px;
+    font-family: 'Montserrat';
+    width: 170px;
+    color: #f6ebd7;
+    padding: 5%;
+    margin: 10%;
+    margin-left: 5%;
+    background-color: #7dc08b;
+    border: none ;
+    border-radius: 50px;
+    transition: all 0.3 ease 0s;
+    cursor: pointer;
+    box-shadow:  none;
+}
+
+footer .btn button:hover{
+    background-color: #f6ebd7;
+    color: #7dc08b;
+    /*transform: scale(1.1);*/
+}
+
+/*Landing Page*/
+
 #bannerRegistro{
     display: flex;
-
 }
 
 #bannerRegistro img{
@@ -118,6 +199,504 @@ nav{
 
 #bannerRegistro h1{
     font-family: 'Gabarito';
+    font-weight: 900;
     font-size: 50px;
     margin: 10%;
+    color: #482b19;
+}
+
+#bannerBeneficios{
+    padding: 10%;
+    background-color: #7dc08b;
+    display: flex;
+    justify-content: space-around;
+}
+
+#bannerBeneficios{
+    text-align: center;
+}
+
+#bannerBeneficios h3{
+    font-family: 'Gabarito', sans-serif;
+    font-weight: 600;
+    color: #f6ebd7;
+    margin-top: 20px;
+}
+
+.imgRounded{
+    margin: 2%;
+    width:300px;
+    height:300px;
+    border-radius:150px;
+    object-fit: cover; 
+    box-shadow:  1px 1px 4px #482b19;
+    background-color: white;
+}
+
+#bannerStories01 {
+    display: flex;
+    padding: 8%;
+    justify-content: space-between;
+}
+
+#bannerStories01 h1{
+    font-family: 'Gabarito';
+    font-weight: 900;
+    font-size: 60px;
+    margin: 5%;
+    margin-bottom: 10%;
+    color: #482b19;
+}
+
+#bannerStories01 p{
+    width: 600px;
+    margin: 5%;
+    font-size: 20px;
+}
+
+#bannerStories01 img{
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+}
+
+#bannerStories02 {
+    display: flex;
+    padding: 8%;
+    justify-content: space-between;
+}
+
+#bannerStories02 h1{
+    font-family: 'Gabarito';
+    font-weight: 900;
+    font-size: 60px;
+    margin: 5%;
+    margin-bottom: 10%;
+    color: #482b19;
+    text-align: right;
+}
+
+#bannerStories02 p{
+    width: 600px;
+    margin: 5%;
+    font-size: 20px;
+    text-align: right;
+}
+
+#bannerStories02 img{
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+}
+
+#bannerDesafios{
+    padding: 10%;
+    text-align: center;
+    background-image: url(../img/bg_bannerDesafios.svg);
+}
+
+#bannerDesafios h2{
+    font-family: 'Gabarito';
+    font-weight: 900;
+    font-size: 40px;
+    color: #482b19;
+    text-align: center;
+    margin: 5%;
+    margin: 50px; 
+}
+
+#cardContainer{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+}
+
+.card{
+    width: 30%;
+    height: auto;
+    background-color: #482b19;
+    color: #f6ebd7;
+    border-radius: 25px;
+    box-shadow:  1px 1px 4px #482b19;
+}
+
+.card h3{
+    margin: 4%;
+    margin-top: 7%;
+    font-family: 'Gabarito';
+    font-weight: 300;
+    font-size: 25px;
+}
+
+.card p{
+    margin: 5%;
+    margin-top: 2%;
+    padding: 5%;
+}
+
+#cardDesafio01{
+    background-image: url(../img/img22.jpg); 
+    height: 200px;
+    width:auto;
+    background-size: cover;
+    border-top-right-radius: 25px ;
+    border-top-left-radius: 25px;
+}
+
+#cardDesafio02{
+    background-image: url(../img/img23.jpg); 
+    height: 200px;
+    width:auto;
+    background-size: cover;
+    border-top-right-radius: 25px ;
+    border-top-left-radius: 25px;
+}
+
+#cardDesafio03{
+    background-image: url(../img/img06.jpg); 
+    height: 200px;
+    width:auto;
+    background-size: cover;
+    border-top-right-radius: 25px ;
+    border-top-left-radius: 25px;
+}
+
+#bannerDesafios{
+    padding: 10%;
+    text-align: center;
+}
+
+#bannerRecetas {
+    font-family: 'Gabarito';
+    font-weight: 900;
+    font-size: 40px;
+    color: #482b19;
+    text-align: center;
+    margin: 5%;
+    margin: 50px; 
+    margin-bottom: 100px;
+}
+
+#cardRecetas{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    font-size: 70px;
+    margin:5%
+}
+
+#cardReceta01{
+    background-image: url(../img/img10.jpg);
+    height: 500px;
+    width:25%;
+    background-size: cover;
+    border-radius: 25px;
+    text-align: center;
+    padding-top:200px ;
+    box-shadow:  1px 1px 4px #a39a94;
+}
+
+#cardReceta02{
+    background-image: url(../img/img11.jpg);
+    height: 500px;
+    width:25%;
+    background-size: cover;
+    border-radius: 25px;
+    text-align: center;
+    padding-top:200px ;
+    box-shadow:  1px 1px 4px #a39a94;
+}
+
+#cardReceta03{
+    background-image: url(../img/img14.jpg);
+    height: 500px;
+    width:25%;
+    background-size: cover;
+    border-radius: 25px;
+    text-align: center;
+    padding-top:200px ;
+    box-shadow:  1px 1px 4px #a39a94;
+}
+
+button{
+    font-size: 15px;
+    font-family: 'Montserrat';
+    color: #f6ebd7;
+    margin: 4%;
+    padding: 3%;
+    background-color: #fec037;
+    border: none ;
+    border-radius: 50px;
+    transition: all 0.3 ease 0s;
+    cursor: pointer; 
+    box-shadow:  1px 1px 4px #a39a94;
+}
+
+
+
+
+/*Página Explorar*/
+
+#bannerBuscar{
+    display: flex;
+    justify-content: space-between ;
+    padding: 2%;
+    border-radius: 15px;
+}
+
+.buscar{
+    position: absolute;
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.buscar input{
+    width: 0px;
+    height: 40px;
+    padding: 0 20px;
+    font-size: 18px;
+    color: #482b19;
+    outline: none;
+    border: 1px solid #f6ebd7;
+    border-radius: 30px;
+    transition: all 0.6s ease;
+    font-family: 'Montserrat';
+}
+
+.buscar i{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    background: #7dc08b;
+    text-align: center;
+    color: #f6ebd7;
+    font-size: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.buscar:hover input{
+   width: 240px; 
+}
+
+.buscar input:focus{
+    width: 240px;
+}
+
+.filtros{
+    margin-left: 30%;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.filtros button{
+    padding: 10px;
+    width: 150px;
+    margin-left: 20px;
+    background-color: #fec037;
+}
+
+.filtros button:hover{
+    background-color: #7dc08b;
+}
+
+.filtros button:active{
+    background-color: #7dc08b;
+}
+
+
+.atributosReceta{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 18px;
+}
+
+.atributosReceta  p{
+    margin: 0;
+    color: #fec037;
+}
+
+#cardReceta04{
+    background-image: url(../img/img11.jpg); 
+    height: 200px;
+    width:auto;
+    background-size: cover;
+    border-top-right-radius: 25px ;
+    border-top-left-radius: 25px;
+}
+
+#cardReceta05{
+    background-image: url(../img/img07.jpg); 
+    height: 200px;
+    width:auto;
+    background-size: cover;
+    border-top-right-radius: 25px ;
+    border-top-left-radius: 25px;
+}
+
+#cardReceta06{
+    background-image: url(../img/img03.jpg); 
+    height: 200px;
+    width:auto;
+    background-size: cover;
+    border-top-right-radius: 25px ;
+    border-top-left-radius: 25px;
+}
+
+#cardReceta07{
+    background-image: url(../img/img09.jpg); 
+    height: 200px;
+    width:auto;
+    background-size: cover;
+    border-top-right-radius: 25px ;
+    border-top-left-radius: 25px;
+}
+
+#cardReceta08{
+    background-image: url(../img/img17.jpg); 
+    height: 200px;
+    width:auto;
+    background-size: cover;
+    border-top-right-radius: 25px ;
+    border-top-left-radius: 25px;
+}
+
+#cardReceta09{
+    background-image: url(../img/img02.jpg); 
+    height: 200px;
+    width:auto;
+    background-size: cover;
+    border-top-right-radius: 25px ;
+    border-top-left-radius: 25px;
+}
+
+#cardReceta10{
+    background-image: url(../img/img13.jpg); 
+    height: 200px;
+    width:auto;
+    background-size: cover;
+    border-top-right-radius: 25px ;
+    border-top-left-radius: 25px;
+}
+
+/*Página Politica Privacidad*/
+
+#privacidad{
+    margin: 5%;
+    padding: 5%;
+    text-align: justify;
+    color: #482b19;
+}
+
+#privacidad h1{
+    font-family: 'Gabarito';
+    font-weight: 900;
+    margin: 2%;
+}
+
+#privacidad h3{
+    font-family: 'Gabarito';
+    font-weight: 600;
+    margin: 2%;
+}
+
+/*Página Desafios*/
+
+#buscador{
+    display: flex;
+    align-items: center;
+    color: #f6ebd7;
+}
+
+.barraBuscar{
+    background: #fec037;
+    width: 90%;
+    max-width: 650px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    border-radius: 30px;
+    height: 50px;
+   margin-left: 30%;
+    margin-top: 100px;
+    
+}
+
+.barraBuscar input{
+    flex: 1;
+    padding: 15px 10px;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    font-size: 20px;
+    font-family: 'Montserrat';
+}
+
+.barraBuscar button i{
+    width: 25px;
+}
+
+.barraBuscar button{
+   padding: 10px 12px;
+   border: 0;
+   outline: 0;
+   background: #7dc08b;
+   cursor: pointer;
+}
+
+#bannerDesafiosOFF{
+    padding: 10%;
+    text-align: center;
+}
+
+#bannerDesafiosOFF h2{
+    font-family: 'Gabarito';
+    font-weight: 900;
+    font-size: 40px;
+    color: #482b19;
+    text-align: center;
+    margin: 5%;
+}
+
+#bannerDesafiosOFF h3{
+    font-size: 20px;
+    text-align: center;
+    margin: 20px 
+}
+
+#cardDesafio04{
+    background-image: url(../img/img01.jpg); 
+    height: 200px;
+    width:auto;
+    background-size: cover;
+    border-top-right-radius: 25px ;
+    border-top-left-radius: 25px;
+}
+
+#cardDesafio05{
+    background-image: url(../img/img08.jpg); 
+    height: 200px;
+    width:auto;
+    background-size: cover;
+    border-top-right-radius: 25px ;
+    border-top-left-radius: 25px;
+}
+
+#cardDesafio06{
+    background-image: url(../img/img15.jpg); 
+    height: 200px;
+    width:auto;
+    background-size: cover;
+    border-top-right-radius: 25px ;
+    border-top-left-radius: 25px;
 }

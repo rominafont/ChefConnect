@@ -5,20 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ChefConnect - Un Mundo de Sabores</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
 <body>
+    <!--Header - Menú Superior-->
     <header class="header"> 
-        <div class="logo">
+        <div id="logo">
             <a href="./index.html">ChefConnect!</a>
         </div>
         <nav class="menuTop">
             <ul>
-                <li><a href="#">Explora</a></li>
-                <li><a href="#">Desafios</a></li>
-                <li><a href="#">Eventos</a></li>
-                <li><a href="#">FAQ</a></li>
-                <li><a href="#">Política de Privacidad</a></li>
+                <li><a href="./explorar.html">Explora</a></li>
+                <li><a href="./desafios.html">Desafios</a></li>
+                <li><a href="./eventos.html">Eventos</a></li>
+                <li><a target="_blank" href="./faq.html">FAQ</a></li>
+                <li><a target="_blank" href="./privacidad.html">Política de Privacidad</a></li>
             </ul>
             <a href="#" class="btn"><button>Inicio Sesión</button></a>
         </nav>
@@ -28,15 +30,111 @@
         <section id="bannerRegistro">
             <img src="img/img03.jpg" alt="Banner Registro">
             <div>
-                <h1>Bienvenido</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus facilis reiciendis harum cumque omnis minima maiores!</p>
+                <h1>Empieza a cocinar!</h1>
+                <p>Descubre las mejores recetas de nuestros Chefs,  </p>
                 <a href="#" class="btn"><button>Registro</button></a>
                 <a href="#" class="btn"><button>Inicio Sesión</button></a>
             </div>
 
         </section>
 
-    </div>
+        <section id="bannerBeneficios">
+            <div>
+                <img class="imgRounded" src="img/img09.jpg" alt="">
+                <h3>Aprende Deliciosas Recetas</h2>
+            </div>
+            <div>
+                <img class="imgRounded" src="img/img12.jpg" alt="">
+                <h3>Únete a Desafíos Únicos</h2>
+            </div>
+            <div>
+                <img class="imgRounded" src="img/img06.jpg" alt="">
+                <h3>Acude a Eventos Especiales</h2>
+            </div>
+        </section>
+        <section id="bannerStories01">
+            <div>
+                <h1>Conoce a Samuel</h1>
+                <p>Samuel ama la cocina pero nunca tenía tiempo para buscar nuevas recetas y aprender nuevas habilidades. Desde que se registró en ChefConnect ha compartido decenas de recetas y ha ganados más de 10 insignias de nuestros Desafíos. <br> Ahora esta nominado a mejor aprendiz de los premios anuales de ChefConnect.</p>
+                <a href="#" class="btn"><button>Empieza ahora</button></a>
+            </div>
+            <img src="img/img20.jpg" alt="Historia Samuel">
+        </section>
 
+        <section id="bannerStories02">
+            <img src="img/img19.jpg" alt="Historia Samuel">
+            <div>
+                <h1>Ella es Sara</h1>
+                <p>Sara es una chef jubilida que comparte cada semana recetas con nuestros usuarios. Su cocina fusión y su amor por la cocina hacen de sus recetas platos estelares. ¡Gracias a ChefConnect, Sara creo su propio evento de cocina en vivo al que asistieron mas de 100 personas!</p>
+                <a href="#" class="btn"><button>Descubre más</button></a>
+            </div>
+        </section>
+
+        <section id="bannerDesafios">
+            <h2>Nuestros Desafíos Semanales</h2>
+            <div id="cardContainer">
+                <div class="card">
+                    <div>
+                        <div id="cardDesafio01"></div>
+                        <div> <h3>Otoño entrante, barriga tirante!</h3>
+                            <p>Encuentra las recetas más cozy que te prepararan para los primeros dias de frio.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <div id="cardDesafio02"></div>
+                        <div> <h3>Que te pillen con las manos en la masa!</h3>
+                            <p>Hojaldre, pan, pizza, pasta... ¿Podríamos vivir sin harina y agua?</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <div id="cardDesafio03"></div>
+                        <div> <h3>El comer y el ahorrar, todo es empezar!</h3>
+                            <p>¿Quién será capaz de crear el menú semanal más nutritivo y sano a la vez?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="bannerRecetas">
+            <h2>Recetas para chuparse los dedos:</h2>
+            <div id="cardRecetas">
+                <div id="cardReceta01">
+                    <i class="fa-solid fa-play" style="color: #ffffff;"></i>
+                </div>
+                <div id="cardReceta02">
+                    <i class="fa-solid fa-play" style="color: #ffffff;"></i>
+                </div> 
+                <div id="cardReceta03">
+                    <i class="fa-solid fa-play" style="color: #ffffff;"></i>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!--Footer - Menú Inferior-->
+    <footer>
+        <div id="logo">
+            <a href="./index.html">ChefConnect!</a>
+        </div>
+        <nav class="menuBottom">
+            <ul>
+                <li><a href="./explora.html">Explora</a></li>
+                <li><a href="./desafios.html">Desafios</a></li>
+                <li><a href="./eventos.html">Eventos</a></li>
+                <li><a href="./faq.html">FAQ</a></li>
+                <li><a href="./privacidad.html">Política de Privacidad</a></li>
+            </ul>
+            <div id="socialmedia">
+                <i class="fa-brands fa-instagram fa-lg" style="color: #f6ebd7;"></i>
+                <i class="fa-brands fa-youtube fa-lg" style="color: #f6ebd7;"></i>
+                <i class="fa-brands fa-facebook fa-lg" style="color: #f6ebd7;"></i>
+                <a href="https://github.com/rominafont/ChefConnect" target="_blank"><i class="fa-brands fa-github fa-lg" style="color: #f6ebd7;"></i> </a>
+            </div>
+        </nav> 
+    </footer>
 </body>
 </html>
