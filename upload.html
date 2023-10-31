@@ -27,30 +27,65 @@
     <section id="uploadContainer">
         <form action="index.html" method="get">
             <h2>Comparte tus mejores creaciones</h2>
-            <fieldset>
-                <label for="receta">Título de la receta:</label><br>
-                <input type="text" id="receta" name="titulo_receta"><br>
+            <fieldset id="formUpload">
+                <label for="receta"><i class="fa-solid fa-bowl-food"></i> Título de la receta:</label><br>
+                <input type="text" id="receta" name="tituloReceta"><br>
 
-                <label for="ingredientesReceta">Ingredientes:</label><br>
-                <textarea id="ingredientesReceta" name="ingredientesReceta"></textarea><br>
+                <label for="image"><i class="fa-solid fa-photo-film"></i></label><br>
+                <input type="image" src="./img/img08.jpg" width="200px" height="200px" alt="agrega tus recetas" id="image" name="image"><br>
 
-                <label for="pasosReceta">Pasos:</label><br>
+
+                <label for="ingredientesReceta"><i class="fa-solid fa-cart-shopping"></i> Ingredientes:</label><br>
+                <textarea id="ingredientesReceta" name="ingredientesReceta"></textarea>
+                <br>
+                <label for="pasosReceta"><i class="fa-solid fa-list"></i> Pasos:</label><br>  
                 <textarea id="pasosReceta" name="pasosReceta"></textarea>
+                <br> 
+                <label for="time"><i class="fa-solid fa-stopwatch"></i> Duración:</label><br>
+                <input type="number" id="duracion" name="duracionReceta"><br>
 
-                <label for="dificultadReceta">Dificultad:</label><br>
-                <radio id="dificultadReceta" name="dificultadReceta"></textarea>
+                <span class="dificultad">Dificultad:<br>
+                    <label for="dificultadReceta" class="dificultad"><input type="radio" id="dificultadReceta" value="bajo" name="dificultad" checked>
+                        <i class="fa-solid fa-fire" style="color: #9b0b0b;"></i></label><br>
+                    
+                    <label for="dificultadReceta" class="dificultad"><input type="radio" id="dificultadReceta" value="medio" name="dificultad">
+                        <i class="fa-solid fa-fire" style="color: #9b0b0b;"></i> <i class="fa-solid fa-fire" style="color: #9b0b0b;"></i></label><br>
+                    
+                    <label for="dificultadReceta" class="dificultad"><input type="radio" id="dificultadReceta" value="alto" name="dificultad">
+                        <i class="fa-solid fa-fire" style="color: #9b0b0b;"></i> <i class="fa-solid fa-fire" style="color: #9b0b0b;"></i> <i class="fa-solid fa-fire" style="color: #9b0b0b;"></i></label><br>
+                </span>
+
+                <span class="alergenos">Alérgenos y otras especificaciones:<br>
+                    <label><input type="checkbox" id="cbox01" value="gluten"> <i class="fa-solid fa-wheat-awn-circle-exclamation" style="color: #ffffff;"></i> Gluten</label><br/>
+                    <label><input type="checkbox" id="cbox02" value="crustaceos"> <i class="fa-solid fa-shrimp" style="color: #ffffff;"></i> Crustaceos</label><br/>
+                    <label><input type="checkbox" id="cbox03" value="huevos"> <i class="fa-solid fa-egg" style="color: #ffffff;"></i> Huevo</label><br/>
+                    <label><input type="checkbox" id="cbox05" value="soja"> <i class="fa-solid fa-seedling" style="color: #ffffff;"></i> Soja</label><br/>
+                    <label><input type="checkbox" id="cbox05" value="leche"> <i class="fa-solid fa-cheese" style="color: #ffffff;"></i> Lactosa</label><br/>
+                    <label><input type="checkbox" id="cbox06" value="picante"> <i class="fa-solid fa-pepper-hot" style="color: #ffffff;"></i> Picante</label><br/>
+                    <label><input type="checkbox" id="cbox06" value="vegan"> <i class="fa-solid fa-leaf" style="color: #ffffff;"></i> 100% Vegana</label><br/>
+                </span>
+                <br>
+                <span class="plato">Tipo de Plato:<br>
+                    <input type="radio" id="plato" value="entrante" name="plato" checked>
+                    <label for="plato" class="plato"> <i class="fa-solid fa-carrot" style="color: #ffffff;"></i> Entrante</label><br>
+                    <input type="radio" id="plato" value="principal" name="plato">
+                    <label for="plato" class="plato"> <i class="fa-solid fa-utensils" style="color: #ffffff;"></i> Plato Principal</label><br>
+                    <input type="radio" id="plato" value="postre" name="plato">
+                    <label for="plato" class="plato"><i class="fa-solid fa-cake-candles" style="color: #ffffff;"></i> Postre (dulce) </label><br>
+                    <input type="radio" id="plato" value="snack" name="plato">
+                    <label for="plato" class="plato"> <i class="fa-solid fa-hotdog" style="color: #ffffff;"></i> Snack</label><br>
+                    <input type="radio" id="plato" value="bebida" name="plato">
+                    <label for="plato" class="plato"> <i class="fa-solid fa-mug-hot" style="color: #ffffff;"></i> Bebida Caliente</label><br>
+                    <input type="radio" id="plato" value="cocktail" name="plato">
+                    <label for="plato" class="plato"> <i class="fa-solid fa-martini-glass-citrus" style="color: #ffffff;"></i> Cocktail</label><br>
+                </span>
+
+                <a href="./"><button>Cancelar</button></a>
+                <a href="./"><button>Guardar</button></a>
+                <a href="./"><button>Publicar</button></a>
                 
-                <label for="time">Duración:</label><br>
-                <input type="time" id="duracion" name="duracion_receta"><br>
-
-                <span class="dificultad">Nivel:</span><br>
-                    <input type="radio" id="dificultadReceta" value="1" name="facil" checked>
-                    <label for="dificultadReceta" class="dificultad"><i class="fa-solid fa-fire" style="color: #9b0b0b;"></i></label><br>
-                    <input type="radio" id="dificultadReceta" value="2" name="medio">
-                    <label for="dificultadReceta" class="dificultad"><i class="fa-solid fa-fire" style="color: #9b0b0b;"></i> <i class="fa-solid fa-fire" style="color: #9b0b0b;"></i></label><br>
-                    <input type="radio" id="dificultadReceta" value="3" name="dificil">
-                    <label for="dificultadReceta" class="dificultad"><i class="fa-solid fa-fire" style="color: #9b0b0b;"></i> <i class="fa-solid fa-fire" style="color: #9b0b0b;"></i> <i class="fa-solid fa-fire" style="color: #9b0b0b;"></i></label><br>
-
+                
+                </button>
             </fieldset>
         </form>
         

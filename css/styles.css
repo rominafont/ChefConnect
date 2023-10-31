@@ -763,3 +763,42 @@ button{
     border-top-right-radius: 25px ;
     border-top-left-radius: 25px;
 }
+
+/*Página Upload*/
+
+#uploadContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5%;
+}
+
+#uploadContainer h2{
+    font-family: 'Gabarito';
+    font-weight: 900;
+    font-size: 40px;
+    color: #482b19;
+    text-align: center;
+    margin: 2%;
+    margin-bottom: 100px;
+}
+
+#formUpload{
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    border-radius: 20px;
+    border-color: transparent;
+    width: 800px;
+    font-family: 'Gabarito';
+    font-weight: 600;
+    font-size: 25px;
+    color: #482b19;
+    padding: 5%;
+}
+
+#formUpload i{
+    color: #fec037;
+    font-size: 30px;
+    margin: 10px ;
+}
