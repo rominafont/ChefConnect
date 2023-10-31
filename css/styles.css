@@ -716,7 +716,6 @@ button{
     background-size: cover;
     border-top-right-radius: 25px ;
     border-top-left-radius: 25px;
-    margintop: 3;
 }
 
 #cardEvento02{
@@ -795,6 +794,7 @@ button{
     font-size: 25px;
     color: #482b19;
     padding: 5%;
+    justify-content: space-around;
 }
 
 #formUpload i{
@@ -802,3 +802,12 @@ button{
     font-size: 30px;
     margin: 10px ;
 }
+
+#formUpload #receta{
+    background-color: #482b19;
+    outline: none;
+    border: 1px solid #f6ebd7;
+    border-radius: 30px;
+}
+
+
