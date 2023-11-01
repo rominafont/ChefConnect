@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+<style>
+        @import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@600;900&family=Montserrat&display=swap');
+    
+    *{
+        margin:0;
+        padding: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+    }
+    
+    body {
+        background-color:#f6ebd7;
+        font-family: 'Montserrat', sans-serif;
+    }
+    
+    .header{
+    background-color: #482b19;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100px;
+    padding: 5px, 10%;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+    padding-left: 5%;
+    padding-right: 5%;
+    color: #f6ebd7;
+}
+
+#logo{
+    color: #f6ebd7; 
+    text-decoration: none;
+    font-family: 'Gabarito';
+    font-weight: 900;
+}
+
+.header #logo{
+    height: 70px;
+    width: auto;
+    margin: 2%;
+    margin-right: auto;
+    margin-top: auto;
+    padding: 2%;
+    font-size: 40px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.header .logo:hover{
+    transform: scale(1.2);
+}
+
+.header a{
+    color: #f6ebd7;
+}
+
+.header .menuTop a:hover{
+    color: #7dc08b;
+    transform: scale(1.1);
+}
+
+.header .menuTop{
+    list-style: none;
+    font-size: 18px;
+}
+
+.header .menuTop li{
+    display: inline;
+    padding: 0 20px;
+}
+
+.header .menuTop a{
+   font-size: 700;
+   text-decoration: none; 
+}
+
+.header .btn button{
+    font-size: 18px;
+    font-family: 'Montserrat';
+    width: 170px;
+    color: #f6ebd7;
+    padding: 5%;
+    margin: 10%;
+    margin-left: 5%;
+    background-color: #7dc08b;
+    border: none ;
+    border-radius: 50px;
+    transition: all 0.3 ease 0s;
+    cursor: pointer;
+    box-shadow:  none;
+}
+
+.header .btn button:hover{
+    background-color: #f6ebd7;
+    color: #7dc08b;
+    /*transform: scale(1.1);*/
+}
+
+.header .imgRounded{
+    width: 70px;
+    height: 70px;
+}
+
+
+    
+
+    .caja-post {
+        font-family: "gabarito";
+    font-weight:300;
+     width: 800px;
+    height: 500px;  
+    background-color: rgba(255, 255, 255, 0.9);
+    z-index: 1;
+    text-align: center;
+    padding-top: 5px;
+    border-radius: 23px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%, -50%);
+    margin-top: 30px;
+    margin-bottom: 0%;
+    display: flex;
+    flex-direction:row;  
+    }
+
+    .mantel {
+    width: 100%;
+    height: 100%;
+    margin-top: 130px;
+    }
+
+    .imagen-post {
+    width: 300px;    
+    height: 470px;
+    margin-top: 10px;
+    margin-left: 10px;
+    border-radius: 9px;
+    object-fit: cover;
+    position: relative;
+    }
+
+    .imagensola {
+    width: 300px;    
+    height: 470px;
+    border-radius: 9px; 
+    object-fit: cover; 
+
+    }
+
+    .caja-contenido {
+    width: 370px;
+    height: 485px;    
+    
+    border-radius: 20px;
+    position: absolute;
+    left: 45%;
+    margin-top: 5px;
+    }
+
+    .usuario {
+    flex-direction: row;
+    justify-content: flex-start;
+    } 
+
+    .fotousuario{
+    width: 15%;
+    height: 15%; 
+    margin-left: -300px;
+    margin-top: 20px;
+    }
+
+    .nombre {
+    margin-top: -40px;
+    margin-left: -130px;
+    font-family: Montserrat; 
+    }
+
+    .explorar{
+    text-align: center;  
+    position: absolute;
+    margin-left: 45%;
+    margin-top: 120px;
+    margin-bottom:100px ;
+    font-family: Gabarito;
+    font-weight: bold;
+    font-size: larger;
+    }
+
+    .comida {
+    margin-top: -380px;
+    margin-left: 360px;
+    font-family: Gabarito;
+    s
+    }
+
+    .lineausuario {
+    margin-top: 25px;  
+    }
+
+    .ingredientes { 
+     width: 320px;
+     height: 270px;
+     margin-left: 450px;
+     margin-top: 50px;
+
+    }
+
+    .imgRounded{
+    margin: 1%;
+    width:70px;
+    height: 70px;
+    border-radius:150px;
+    object-fit: cover; 
+    box-shadow:  1px 1px 4px #482b19;
+    background-color: white;
+    }
+
+    .todoelcontenido {
+     display: flex;
+     flex-direction: column;   
+    }
+
+    .VEG{
+background-color: #7dc08b;
+width: 70px;
+height: 30px;
+padding-top: 2px;
+padding-bottom: 3px;
+border-radius: 15px;
+color: #f6ebd7;
+border: 3px solid #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+
+.etiquetas {
+    display: flex; 
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 15px;
+    justify-content: space-around;
+    
+}
+
+.singluten {
+    background-color: #7dc08b;
+width: 120px;
+height: 30px;
+padding-top: 2px;
+padding-bottom: 7px;
+border-radius: 15px;
+color: #f6ebd7;
+border: 3px solid #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+ 
+}
+
+.nivel {
+    background-color: #7dc08b;
+width: 120px;
+height: 30px;
+padding-top: 2px;
+padding-bottom: 7px;
+border-radius: 15px;
+color: #f6ebd7;  
+border: 3px solid #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.linea2 {
+margin-top: 1em;
+}
+
+.pasta {
+display: flex;   
+flex-direction: row;
+margin-left: 20px;
+margin-top: 10px;
+}
+
+.cajaingredientes {
+width: 400px;
+height: 90px;   
+margin-top: 1em; 
+text-align: start;
+margin-left: 20px;
+font-size: smaller;
+}
+
+.comentarios {
+ width: 400px;
+ height: 100px; 
+ margin-top: 1em;  
+ 
+}
+
+.queteparece {
+    width: 400px;
+ height: 70px;     
+ text-align: start;
+}
+
+.imgRounded2 {
+    margin: 1%;
+    width:50px;
+    height: 50px;
+    border-radius:150px;
+    object-fit: cover; 
+    box-shadow:  1px 1px 4px #482b19;
+    background-color: white;   
+}
+
+.register-form {
+  padding: 20px;
+  border-radius: 1px;
+  width: 300px;
+  text-align: center;
+  margin-top: -70px;
+  margin-left: 50px;
+}
+
+input[type="text"],
+button {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+}
+
+.linea3 {
+margin-top: 1em;
+margin-bottom: 1em;
+margin-left: -20px;
+
+}
+
+.nohay {
+    margin-top: 20px;
+    font-size: small;
+    font-family: Montserrat;
+}
+
+.quetehaparecido {
+    margin-bottom: 5px;
+}
+ .icono {
+    margin-top: -65px;
+    position: absolute;
+    left: 100%;
+    
+ }
+
+ .numeromegusta {
+    margin-bottom: 5px;
+    font-size: smaller;
+ }
+
+ .fa-solid:hover {
+    transform: scale(1.2);
+    color: #7dc08b;
+ }
+
+ .atributosReceta{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 16px;
+}
+
+.atributosReceta7 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 13px;
+    margin: 10px;
+    margin: 0;
+    color: #fec037;
+
+}
+
+.atributosReceta  p{
+    margin: 0;
+    color: #fec037;
+}
+
+#cardReceta04{
+    background-image: url(../img/img11.jpg); 
+    height: 200px;
+    width:auto;
+    background-size: cover;
+    border-top-right-radius: 25px ;
+    border-top-left-radius: 25px;
+}
+
+#cardReceta05{
+    background-image: url(../img/img07.jpg); 
+    height: 200px;
+    width:auto;
+    background-size: cover;
+    border-top-right-radius: 25px ;
+    border-top-left-radius: 25px;
+}
+
+#cardReceta06{
+    background-image: url(../img/img03.jpg); 
+    height: 200px;
+    width:auto;
+    background-size: cover;
+    border-top-right-radius: 25px ;
+    border-top-left-radius: 25px;
+}
+
+#cardReceta07{
+    background-image: url(../img/img09.jpg); 
+    height: 200px;
+    width:auto;
+    background-size: cover;
+    border-top-right-radius: 25px ;
+    border-top-left-radius: 25px;
+}
+
+#cardReceta08{
+    background-image: url(../img/img17.jpg); 
+    height: 200px;
+    width:auto;
+    background-size: cover;
+    border-top-right-radius: 25px ;
+    border-top-left-radius: 25px;
+}
+
+#cardReceta09{
+    background-image: url(../img/img02.jpg); 
+    height: 200px;
+    width:auto;
+    background-size: cover;
+    border-top-right-radius: 25px ;
+    border-top-left-radius: 25px;
+}
+
+#cardReceta10{
+    background-image: url(../img/img13.jpg); 
+    height: 200px;
+    width:auto;
+    background-size: cover;
+    border-top-right-radius: 25px ;
+    border-top-left-radius: 25px;
+}
+
+#cardContainer{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+}
+
+.card{
+    width: 30%;
+    height: auto;
+    background-color: #482b19;
+    color: #f6ebd7;
+    border-radius: 25px;
+    box-shadow:  1px 1px 4px #482b19;
+}
+
+.card h3{
+    margin: 4%;
+    margin-top: 7%;
+    font-family: 'Gabarito';
+    font-weight: 300;
+    font-size: 25px;
+}
+
+.card p{
+    margin: 5%;
+    margin-top: 2%;
+    padding: 5%;
+}
+
+#cardDesafio01{
+    background-image: url(../img/img22.jpg); 
+    height: 200px;
+    width:auto;
+    background-size: cover;
+    border-top-right-radius: 25px ;
+    border-top-left-radius: 25px;
+}
+
+#cardDesafio02{
+    background-image: url(../img/img23.jpg); 
+    height: 200px;
+    width:auto;
+    background-size: cover;
+    border-top-right-radius: 25px ;
+    border-top-left-radius: 25px;
+}
+
+#cardDesafio03{
+    background-image: url(../img/img06.jpg); 
+    height: 200px;
+    width:auto;
+    background-size: cover;
+    border-top-right-radius: 25px ;
+    border-top-left-radius: 25px;
+}
+
+#bannerDesafios{
+    padding: 10%;
+    text-align: center;
+}
+
+#bannerRecetas {
+    font-family: 'Gabarito';
+    font-weight: 900;
+    font-size: 40px;
+    color: #482b19;
+    text-align: center;
+    margin: 5%;
+    margin: 50px; 
+    margin-bottom: 100px;
+}
+
+#cardRecetas{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    font-size: 70px;
+    margin:5%
+}
+
+#cardReceta01{
+    background-image: url(../img/img10.jpg);
+    height: 500px;
+    width:25%;
+    background-size: cover;
+    border-radius: 25px;
+    text-align: center;
+    padding-top:200px ;
+    box-shadow:  1px 1px 4px #a39a94;
+}
+
+#cardReceta02{
+    background-image: url(../img/img11.jpg);
+    height: 500px;
+    width:25%;
+    background-size: cover;
+    border-radius: 25px;
+    text-align: center;
+    padding-top:200px ;
+    box-shadow:  1px 1px 4px #a39a94;
+}
+
+#cardReceta03{
+    background-image: url(../img/img14.jpg);
+    height: 500px;
+    width:25%;
+    background-size: cover;
+    border-radius: 25px;
+    text-align: center;
+    padding-top:200px ;
+    box-shadow:  1px 1px 4px #a39a94;
+}
+
+.otrasrecetas {
+    margin-top: 200px;
+}
+footer{
+    background-color: #482b19;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 200px;
+    padding: 5px, 10%;
+}
+
+footer #logo{
+    height: 70px;
+    width: auto;
+    margin: 2%;
+    margin-right: auto;
+    padding: 2%;
+    font-size: 40px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+footer .logo:hover{
+    transform: scale(1.2);
+}
+
+footer a{
+    color: #f6ebd7;
+}
+
+footer .menuBottom a:hover{
+    color: #7dc08b;
+    transform: scale(1.1);
+}
+
+footer .menuBottom{
+    list-style: none;
+    font-size: 18px;
+}
+
+footer .menuBottom li{
+    display: inline;
+    padding: 0 20px;
+}
+
+footer .menuBottom a{
+   font-size: 700;
+   text-decoration: none; 
+}
+
+footer .btn button{
+    font-size: 18px;
+    font-family: 'Montserrat';
+    width: 170px;
+    color: #f6ebd7;
+    padding: 5%;
+    margin: 10%;
+    margin-left: 5%;
+    background-color: #7dc08b;
+    border: none ;
+    border-radius: 50px;
+    transition: all 0.3 ease 0s;
+    cursor: pointer;
+    box-shadow:  none;
+}
+
+footer .btn button:hover{
+    background-color: #f6ebd7;
+    color: #7dc08b;
+    /*transform: scale(1.1);*/
+}
+
+</style>
+</style>    
+</head>
+<body>
+     
+    <header class="header"> 
+        <div id="logo">
+            <a href="./index.html">ChefConnect!</a>
+        </div>
+        <nav class="menuTop">
+            <ul>
+                <li><a href="./explorar.html">Explora</a></li>
+                <li><a href="./desafios.html">Desafios</a></li>
+                <li><a href="./eventos.html">Eventos</a></li>
+            </ul>
+            <a href="perfil.html" id="perfil">
+                <img src="img/img27.jpg" alt="Lara Rodríguez" class='imgRounded'></a>
+        </nav>
+    </header>
+    
+    
+    
+
+    
+    <img class="mantel" src="img/mantel web.png" alt="manel">
+    <div class="todoelcontenido">
+    <section>
+        <div class="primerapartepost">
+    <div class="caja-post">
+        <div class="imagen-post">
+            <img class="imagensola" src="img/img11.jpg" alt="comida">
+        </div>
+        
+        <div class="caja-contenido">
+        <div class="usuario">
+            <img class="fotousuario" src="img/Recurso 1.png" alt="ussuario"> </div>
+            <div class="nombre">@Javicuevas</div>
+            <hr class="lineausuario">
+            <div class="etiquetas">
+                <div class="VEG">Veg</div>
+                <div class="singluten">Sin Gluten</div>
+                <div class="nivel">nivel: <i class="fa-solid fa-fire" style="color: #f6ebd7;"></i></div>
+              </div>
+              
+              <p class="pasta">Pasta Vegetal</p>
+              <div class="cajaingredientes">
+              <p>Ingredientes</p>
+              <ul>
+              <li>Pasta a tu elección</li>
+              <li>Espianacas</li>
+              <li>Queso rallado</li>
+              <li>Aceite de oliva</li>
+              </ul>
+              <hr class="linea3">
+              </div>
+              <div class="comentarios"> 
+              <p>Comentarios</p>
+              <p class="nohay">No hay comentarios todavía</p>
+              </div>
+              <div class="queteparece">
+                <p class="quetehaparecido">¿Qué te ha parecido?</p>
+                <img src="img/img27.jpg" alt="Lara Rodríguez" class='imgRounded2'></a>
+                <div class="register-form">
+                <input type="text" placeholder="Añade un comentario" required>
+                <div class="icono">
+                    <p class="numeromegusta">37</p>
+                    <i class="fa-solid fa-thumbs-up fa-xl" style="color: #fec037;"></i></div>
+                 </div>
+              </div>
+    </div>
+</div>
+</section>
+<section>
+    <div class="explorar">
+        Más que cocinar
+    </div>
+    <div class="otrasrecetas">
+    <section id="rapido">
+        <div id="cardRecetas">
+            <div class="card">
+                <div>
+                    <div id="cardReceta04"></div>
+                    <div> <h3>Pasta Vegetal</h3>
+                        <div class="atributosReceta">
+                            <p>nivel: <i class="fa-solid fa-fire" style="color: #f6ebd7;"></i></p>
+                            <p>VEG</p>
+                            <p>15 min <i class="fa-solid fa-stopwatch" style="color: #f6ebd7;"></i></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div>
+                    <div id="cardReceta05"></div>
+                    <div> <h3>Pollo con Salsa de Cacahuete</h3>
+                        <div class="atributosReceta">
+                            <p>nivel: <i class="fa-solid fa-fire" style="color: #f6ebd7;"></i></p>
+                            <p>Keto</p>
+                            <p>15 min <i class="fa-solid fa-stopwatch" style="color: #f6ebd7;"></i></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div>
+                    <div id="cardReceta06"></div>
+                    <div> <h3>Pizza a la sartén</h3>
+                        <div class="atributosReceta">
+                            <p>nivel: <i class="fa-solid fa-fire" style="color: #f6ebd7;"></i></p>
+                            <p>VEG</p>
+                            <p>15 min <i class="fa-solid fa-stopwatch" style="color: #f6ebd7;"></i></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="veg">
+        <div id="cardRecetas">
+            <div class="card">
+                <div>
+                    <div id="cardReceta07"></div>
+                    <div> <h3>Tortitas de Avena</h3>
+                        <div class="atributosReceta7">
+                            <p>nivel: <i class="fa-solid fa-fire" style="color: #f6ebd7;"></i> <i class="fa-solid fa-fire" style="color: #f6ebd7;"></i></p>
+                            <p>VEG</p>
+                            <p>20 min <i class="fa-solid fa-stopwatch" style="color: #f6ebd7;"></i></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div>
+                    <div id="cardReceta08"></div>
+                    <div> <h3>Calabaza Asada</h3>
+                        <div class="atributosReceta">
+                            <p>nivel: <i class="fa-solid fa-fire" style="color: #f6ebd7;"></i></p>
+                            <p>VEG</p>
+                            <p>40 min <i class="fa-solid fa-stopwatch" style="color: #f6ebd7;"></i></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div>
+                    <div id="cardReceta04"></div>
+                    <div> <h3>Pasta Vegetal</h3>
+                        <div class="atributosReceta">
+                            <p>nivel: <i class="fa-solid fa-fire" style="color: #f6ebd7;"></i></p>
+                            <p>VEG</p>
+                            <p>15 min <i class="fa-solid fa-stopwatch" style="color: #f6ebd7;"></i></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</section>
+</div>
+</div>
+<footer>
+    <div id="logo">
+        <a href="./index.html">ChefConnect!</a>
+    </div>
+    <nav class="menuBottom">
+        <ul>
+            <li><a href="./explorar.html">Explora</a></li>
+            <li><a href="./desafios.html">Desafios</a></li>
+            <li><a href="./eventos.html">Eventos</a></li>
+            <li><a target="_blank" href="./faq.html">FAQ</a></li>
+            <li><a target="_blank" href="./privacidad.html">Política de Privacidad</a></li>
+        </ul>
+        <div id="socialmedia">
+            <i class="fa-brands fa-instagram fa-lg" style="color: #f6ebd7;"></i>
+            <i class="fa-brands fa-youtube fa-lg" style="color: #f6ebd7;"></i>
+            <i class="fa-brands fa-facebook fa-lg" style="color: #f6ebd7;"></i>
+            <a href="https://github.com/rominafont/ChefConnect" target="_blank"><i class="fa-brands fa-github fa-lg" style="color: #fec037;"></i> </a>
+        </div>
+    </nav> 
+</footer>   
+</body>
+</body>
+</html>
