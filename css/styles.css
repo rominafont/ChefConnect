@@ -319,6 +319,7 @@ footer .btn button:hover{
     color: #f6ebd7;
     border-radius: 25px;
     box-shadow:  1px 1px 4px #482b19;
+    margin: 30px;
 }
 
 .card h3{
@@ -700,3 +701,113 @@ button{
     border-top-right-radius: 25px ;
     border-top-left-radius: 25px;
 }
+
+/*Página Eventos*/
+#bannerEventos{
+    padding: 10%;
+    text-align: center;
+    margin: 20px;
+}
+
+#cardEvento01{
+    background-image: url(../img/img32.jpg); 
+    height: 200px;
+    width:auto;
+    background-size: cover;
+    border-top-right-radius: 25px ;
+    border-top-left-radius: 25px;
+}
+
+#cardEvento02{
+    background-image: url(../img/img36.jpg); 
+    height: 200px;
+    width:auto;
+    background-size: cover;
+    border-top-right-radius: 25px ;
+    border-top-left-radius: 25px;
+}
+
+#cardEvento03{
+    background-image: url(../img/img33.jpg); 
+    height: 200px;
+    width:auto;
+    background-size: cover;
+    border-top-right-radius: 25px ;
+    border-top-left-radius: 25px;
+}
+
+#cardEvento04{
+    background-image: url(../img/img31.jpg); 
+    height: 200px;
+    width:auto;
+    background-size: cover;
+    border-top-right-radius: 25px ;
+    border-top-left-radius: 25px;
+}
+
+#cardEvento05{
+    background-image: url(../img/img29.jpg); 
+    height: 200px;
+    width:auto;
+    background-size: cover;
+    border-top-right-radius: 25px ;
+    border-top-left-radius: 25px;
+}
+
+#cardEvento06{
+    background-image: url(../img/img25.jpg); 
+    height: 200px;
+    width:auto;
+    background-size: cover;
+    border-top-right-radius: 25px ;
+    border-top-left-radius: 25px;
+}
+
+/*Página Upload*/
+
+#uploadContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5%;
+}
+
+#uploadContainer h2{
+    font-family: 'Gabarito';
+    font-weight: 900;
+    font-size: 40px;
+    color: #482b19;
+    text-align: center;
+    margin: 2%;
+    margin-bottom: 100px;
+}
+
+#formUpload{
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    border-radius: 20px;
+    border-color: transparent;
+    width: 800px;
+    font-family: 'Gabarito';
+    font-weight: 600;
+    font-size: 25px;
+    color: #482b19;
+    padding: 5%;
+    justify-content: space-around;
+}
+
+#formUpload i{
+    color: #fec037;
+    font-size: 30px;
+    margin: 10px ;
+}
+
+#formUpload #receta{
+    background-color: #482b19;
+    outline: none;
+    border: 1px solid #f6ebd7;
+    border-radius: 30px;
+}
+
+

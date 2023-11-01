@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Manos a la Obra! - ChaefConnect</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+  <!--Header - Menú Superior/Inicio Sesión-->
+    <header class="header"> 
+        <div id="logo">
+            <a href="./index.html">ChefConnect!</a>
+        </div>
+        <nav class="menuTop">
+            <ul>
+                <li><a href="./explorar.html">Explora</a></li>
+                <li><a href="./desafios.html">Desafios</a></li>
+                <li><a href="./eventos.html">Eventos</a></li>
+            </ul>
+            <a href="perfil.html" id="perfil">
+                <img src="img/img27.jpg" alt="Lara Rodríguez" class='imgRounded'></a>
+        </nav>
+    </header>
+    <section id="uploadContainer">
+        <form action="index.html" method="get">
+            <h2>Comparte tus mejores creaciones</h2>
+            <fieldset id="formUpload">
+                <label for="receta"><i class="fa-solid fa-bowl-food"></i> Título de la receta:</label><br>
+                <input  class="campoTexto" type="text" id="receta" name="tituloReceta"><br>
+
+                <label for="image"><i class="fa-solid fa-photo-film"></i></label><br>
+                <input type="image" src="./img/img08.jpg" width="200px" height="200px" alt="agrega tus recetas" id="image" name="image"><br>
+
+
+                <label for="ingredientesReceta"><i class="fa-solid fa-cart-shopping"></i> Ingredientes:</label><br>
+                <textarea id="ingredientesReceta" name="ingredientesReceta"></textarea>
+                <br>
+                <label for="pasosReceta"><i class="fa-solid fa-list"></i> Pasos:</label><br>  
+                <textarea id="pasosReceta" name="pasosReceta"></textarea>
+                <br> 
+                <label for="time"><i class="fa-solid fa-stopwatch"></i> Duración:</label><br>
+                <input type="number" id="duracion" name="duracionReceta"><br>
+
+                <span class="dificultad">Dificultad:<br>
+                    <label for="dificultadReceta" class="dificultad"><input type="radio" id="dificultadReceta" value="bajo" name="dificultad" checked>
+                        <i class="fa-solid fa-fire" style="color: #9b0b0b;"></i></label><br>
+                    
+                    <label for="dificultadReceta" class="dificultad"><input type="radio" id="dificultadReceta" value="medio" name="dificultad">
+                        <i class="fa-solid fa-fire" style="color: #9b0b0b;"></i> <i class="fa-solid fa-fire" style="color: #9b0b0b;"></i></label><br>
+                    
+                    <label for="dificultadReceta" class="dificultad"><input type="radio" id="dificultadReceta" value="alto" name="dificultad">
+                        <i class="fa-solid fa-fire" style="color: #9b0b0b;"></i> <i class="fa-solid fa-fire" style="color: #9b0b0b;"></i> <i class="fa-solid fa-fire" style="color: #9b0b0b;"></i></label><br>
+                </span>
+
+                <span class="alergenos">Alérgenos y otras especificaciones:<br>
+                    <label><input type="checkbox" id="cbox01" value="gluten"> <i class="fa-solid fa-wheat-awn-circle-exclamation" style="color: #ffffff;"></i> Gluten</label><br/>
+                    <label><input type="checkbox" id="cbox02" value="crustaceos"> <i class="fa-solid fa-shrimp" style="color: #ffffff;"></i> Crustaceos</label><br/>
+                    <label><input type="checkbox" id="cbox03" value="huevos"> <i class="fa-solid fa-egg" style="color: #ffffff;"></i> Huevo</label><br/>
+                    <label><input type="checkbox" id="cbox05" value="soja"> <i class="fa-solid fa-seedling" style="color: #ffffff;"></i> Soja</label><br/>
+                    <label><input type="checkbox" id="cbox05" value="leche"> <i class="fa-solid fa-cheese" style="color: #ffffff;"></i> Lactosa</label><br/>
+                    <label><input type="checkbox" id="cbox06" value="picante"> <i class="fa-solid fa-pepper-hot" style="color: #ffffff;"></i> Picante</label><br/>
+                    <label><input type="checkbox" id="cbox06" value="vegan"> <i class="fa-solid fa-leaf" style="color: #ffffff;"></i> 100% Vegana</label><br/>
+                </span>
+                <br>
+                <span class="plato">Tipo de Plato:<br>
+                    <input type="radio" id="plato" value="entrante" name="plato" checked>
+                    <label for="plato" class="plato"> <i class="fa-solid fa-carrot" style="color: #ffffff;"></i> Entrante</label><br>
+                    <input type="radio" id="plato" value="principal" name="plato">
+                    <label for="plato" class="plato"> <i class="fa-solid fa-utensils" style="color: #ffffff;"></i> Plato Principal</label><br>
+                    <input type="radio" id="plato" value="postre" name="plato">
+                    <label for="plato" class="plato"><i class="fa-solid fa-cake-candles" style="color: #ffffff;"></i> Postre (dulce) </label><br>
+                    <input type="radio" id="plato" value="snack" name="plato">
+                    <label for="plato" class="plato"> <i class="fa-solid fa-hotdog" style="color: #ffffff;"></i> Snack</label><br>
+                    <input type="radio" id="plato" value="bebida" name="plato">
+                    <label for="plato" class="plato"> <i class="fa-solid fa-mug-hot" style="color: #ffffff;"></i> Bebida Caliente</label><br>
+                    <input type="radio" id="plato" value="cocktail" name="plato">
+                    <label for="plato" class="plato"> <i class="fa-solid fa-martini-glass-citrus" style="color: #ffffff;"></i> Cocktail</label><br>
+                </span>
+
+                <a href="./"><button>Cancelar</button></a>
+                <a href="./"><button>Guardar</button></a>
+                <a href="./"><button>Publicar</button></a>
+                
+                
+                </button>
+            </fieldset>
+        </form>
+        
+    </section>
+
+</body>
+</html>
