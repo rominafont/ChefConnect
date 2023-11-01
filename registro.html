@@ -285,6 +285,9 @@ margin-bottom: 7px;
     margin-top: 20px;
 }
 
+.terms-box {
+ margin-top: 10px;   
+}
 
     </style>
 </head>
@@ -295,12 +298,13 @@ margin-bottom: 7px;
         </div>
         <nav class="menuTop">
             <ul>
+                <li><a target="_blank" href="./faq.html">FAQ</a></li>
+                <li><a target="_blank" href="./privacidad.html">Política de Privacidad</a></li>
                 <li><a href="./explorar.html">Explora</a></li>
                 <li><a href="./desafios.html">Desafios</a></li>
                 <li><a href="./eventos.html">Eventos</a></li>
             </ul>
-            <a href="perfil.html" id="perfil">
-                <img src="img/img27.jpg" alt="Lara Rodríguez" class='imgRounded'></a>
+            <a href="#" class="btn"><button>Inicio Sesión</button></a>
         </nav>
     </header>
     <div class="container">
@@ -317,9 +321,19 @@ margin-bottom: 7px;
           <div class="glutenalergia">Vegana</div>
           <hr class="lineadivision">
           <button type="submit">Registrarse</button>
-          <p>¿Ya tienes una cuenta? <a href="#">Inicia sesión</a></p>
+          <p>¿Ya tienes una cuenta? <a href="iniciosesion.html">Inicia sesión</a></p> 
+          <div class="terms-box">
+            <form action="#">
+                <label for="agree-terms">
+                    <input type="checkbox" id="agree-terms" name="agree-terms">
+                    Acepto los términos y condiciones
+                </label>
+                <input type="submit" value="Aceptar">
+            </form>
+        </div>
         </form>
       </div>
+
 
       <footer>
         <div id="logo">
