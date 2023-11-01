@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <style>
+        .header{
+    background-color: #482b19;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100px;
+    padding: 5px, 10%;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+    padding-left: 5%;
+    padding-right: 5%;
+    color: #f6ebd7;
+}
+
+#logo{
+    color: #f6ebd7; 
+    text-decoration: none;
+    font-family: 'Gabarito';
+    font-weight: 900;
+}
+
+.header #logo{
+    height: 70px;
+    width: auto;
+    margin: 2%;
+    margin-right: auto;
+    margin-top: auto;
+    padding: 2%;
+    font-size: 40px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.header .logo:hover{
+    transform: scale(1.2);
+}
+
+.header a{
+    color: #f6ebd7;
+}
+
+.header .menuTop a:hover{
+    color: #7dc08b;
+    transform: scale(1.1);
+}
+
+.header .menuTop{
+    list-style: none;
+    font-size: 18px;
+}
+
+.header .menuTop li{
+    display: inline;
+    padding: 0 20px;
+}
+
+.header .menuTop a{
+   font-size: 700;
+   text-decoration: none; 
+}
+
+.header .btn button{
+    font-size: 18px;
+    font-family: 'Montserrat';
+    width: 170px;
+    color: #f6ebd7;
+    padding: 5%;
+    margin: 10%;
+    margin-left: 5%;
+    background-color: #7dc08b;
+    border: none ;
+    border-radius: 50px;
+    transition: all 0.3 ease 0s;
+    cursor: pointer;
+    box-shadow:  none;
+}
+
+.header .btn button:hover{
+    background-color: #f6ebd7;
+    color: #7dc08b;
+    /*transform: scale(1.1);*/
+}
+
+.header .imgRounded{
+    width: 70px;
+    height: 70px;
+}
+
+        body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fafafa;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.register-form {
+background-color: rgba(255, 255, 255, 0.9);
+  
+  padding: 20px;
+  border-radius: 20px;
+  width: 500px;
+  text-align: center;
+}
+
+.register-form h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.register-form h3 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+input[type="alergias"],
+input[type="tipodedieta"],
+input[type="text"],
+input[type="email"],
+input[type="password"],
+button {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+button {
+  background-color: #7dc08b;
+  color: #fff;
+  cursor: pointer;
+  width: 130px;
+  border-radius: 30px;
+  
+}
+
+button:hover {
+  background-color: #f6ebd7;
+}
+
+p {
+  margin-top: 10px;
+  color: #888;
+}
+
+a {
+  color: #fec037;
+  text-decoration: none;
+}
+
+body{
+         background-image: url(img/img04.jpg);
+        background-repeat: no-repeat;
+         background-size: cover;
+         display: flex; 
+        justify-content: center;
+        flex-direction: column;
+        -ms-flex-align: center;
+        }
+
+    body img{width: 100%;
+             height: 100%;}   
+
+    .imagen-cabecera {
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+   
+}
+
+footer{
+    background-color: #482b19;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 200px;
+    padding: 5px, 10%;
+}
+
+footer #logo{
+    height: 70px;
+    width: auto;
+    margin: 2%;
+    margin-right: auto;
+    padding: 2%;
+    font-size: 40px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+footer .logo:hover{
+    transform: scale(1.2);
+}
+
+footer a{
+    color: #f6ebd7;
+}
+
+footer .menuBottom a:hover{
+    color: #7dc08b;
+    transform: scale(1.1);
+}
+
+footer .menuBottom{
+    list-style: none;
+    font-size: 18px;
+}
+
+footer .menuBottom li{
+    display: inline;
+    padding: 0 20px;
+}
+
+footer .menuBottom a{
+   font-size: 700;
+   text-decoration: none; 
+}
+
+footer .btn button{
+    font-size: 18px;
+    font-family: 'Montserrat';
+    width: 170px;
+    color: #f6ebd7;
+    padding: 5%;
+    margin: 10%;
+    margin-left: 5%;
+    background-color: #7dc08b;
+    border: none ;
+    border-radius: 50px;
+    transition: all 0.3 ease 0s;
+    cursor: pointer;
+    box-shadow:  none;
+}
+
+footer .btn button:hover{
+    background-color: #f6ebd7;
+    color: #7dc08b;
+    /*transform: scale(1.1);*/
+}
+
+.glutenalergia {
+    background-color: #7dc08b;
+width: 90px;
+height: 30px;
+padding-top: 5px;
+padding-bottom: 7px;
+border-radius: 15px;
+color: #f6ebd7;
+border: 1px solid #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  
+margin-top: 0px;  
+margin-bottom: 7px;
+}
+
+.titulopreferencias {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.lineadivision {
+    margin-top: 20px;
+}
+
+
+    </style>
+</head>
+<body>
+    <header class="header"> 
+        <div id="logo">
+            <a href="./index.html">ChefConnect!</a>
+        </div>
+        <nav class="menuTop">
+            <ul>
+                <li><a href="./explorar.html">Explora</a></li>
+                <li><a href="./desafios.html">Desafios</a></li>
+                <li><a href="./eventos.html">Eventos</a></li>
+            </ul>
+            <a href="perfil.html" id="perfil">
+                <img src="img/img27.jpg" alt="Lara Rodríguez" class='imgRounded'></a>
+        </nav>
+    </header>
+    <div class="container">
+        <form class="register-form">
+          <h2>Registro</h2>
+          <input type="text" placeholder="Nombre de usuario" required>
+          <input type="email" placeholder="Correo electrónico" required>
+          <input type="password" placeholder="Contraseña" required>
+          <hr>
+          <h3 class="titulopreferencias">Preferencias de Usuario</h3>
+          <input type="alergias" placeholder="Alergias" required>
+          <div class="glutenalergia">Gluten</div>
+          <input type="tipodedieta" placeholder="Tipo de dieta" required>
+          <div class="glutenalergia">Vegana</div>
+          <hr class="lineadivision">
+          <button type="submit">Registrarse</button>
+          <p>¿Ya tienes una cuenta? <a href="#">Inicia sesión</a></p>
+        </form>
+      </div>
+
+      <footer>
+        <div id="logo">
+            <a href="./index.html">ChefConnect!</a>
+        </div>
+        <nav class="menuBottom">
+            <ul>
+                <li><a href="./explorar.html">Explora</a></li>
+                <li><a href="./desafios.html">Desafios</a></li>
+                <li><a href="./eventos.html">Eventos</a></li>
+                <li><a target="_blank" href="./faq.html">FAQ</a></li>
+                <li><a target="_blank" href="./privacidad.html">Política de Privacidad</a></li>
+            </ul>
+            <div id="socialmedia">
+                <i class="fa-brands fa-instagram fa-lg" style="color: #f6ebd7;"></i>
+                <i class="fa-brands fa-youtube fa-lg" style="color: #f6ebd7;"></i>
+                <i class="fa-brands fa-facebook fa-lg" style="color: #f6ebd7;"></i>
+                <a href="https://github.com/rominafont/ChefConnect" target="_blank"><i class="fa-brands fa-github fa-lg" style="color: #fec037;"></i> </a>
+            </div>
+        </nav> 
+    </footer> 
+</body>
+</html>

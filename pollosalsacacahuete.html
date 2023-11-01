@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
 <style>
-    @import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@600;900&family=Montserrat&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@600;900&family=Montserrat&display=swap');
     
     *{
         margin:0;
@@ -228,6 +230,18 @@ nav{
     background-color: white;
     }
 
+    .imgRounded3{
+        margin: 1%;
+    width:30px;
+    height: 30px;
+    border-radius:150px;
+    object-fit: cover; 
+    box-shadow:  1px 1px 4px #482b19;
+    background-color: white;     
+    position: absolute; 
+    right: 330px;
+    }
+
     .todoelcontenido {
      display: flex;
      flex-direction: column;   
@@ -353,6 +367,8 @@ margin-left: -20px;
     margin-top: 20px;
     font-size: small;
     font-family: Montserrat;
+    position: absolute;
+    margin-left: 50px;
 }
 
 .quetehaparecido {
@@ -651,9 +667,10 @@ footer .btn button:hover{
 }
 
 </style>
+</style>    
 </head>
 <body>
-    
+     
     <header class="header"> 
         <div id="logo">
             <a href="./index.html">ChefConnect!</a>
@@ -679,7 +696,7 @@ footer .btn button:hover{
         <div class="primerapartepost">
     <div class="caja-post">
         <div class="imagen-post">
-            <img class="imagensola" src="img/img12.jpg" alt="comida">
+            <img class="imagensola" src="img/img07.jpg" alt="comida">
         </div>
         
         <div class="caja-contenido">
@@ -688,25 +705,25 @@ footer .btn button:hover{
             <div class="nombre">@Javicuevas</div>
             <hr class="lineausuario">
             <div class="etiquetas">
-                <div class="VEG">Veg</div>
                 <div class="singluten">Sin Gluten</div>
                 <div class="nivel">nivel: <i class="fa-solid fa-fire" style="color: #f6ebd7;"></i></div>
               </div>
               
-              <p class="pasta">Pasta con Espinacas</p>
+              <p class="pasta">Pollo con salsa de cacahuetes</p>
               <div class="cajaingredientes">
               <p>Ingredientes</p>
               <ul>
-              <li>Pasta a tu elección</li>
-              <li>Espianacas</li>
-              <li>Queso rallado</li>
-              <li>Aceite de oliva</li>
+              <li>1 muslo de pollo</li>
+              <li>cacahuetes</li>
+              <li>Salsa de soja</li>
+              <li>Verduras a tu elección</li>
               </ul>
               <hr class="linea3">
               </div>
               <div class="comentarios"> 
               <p>Comentarios</p>
-              <p class="nohay">No hay comentarios todavía</p>
+              <img src="img/img27.jpg" alt="Lara Rodríguez" class="imgRounded3"></a>
+              <p class="nohay">Diosss que pinta!</p>
               </div>
               <div class="queteparece">
                 <p class="quetehaparecido">¿Qué te ha parecido?</p>
@@ -829,7 +846,7 @@ footer .btn button:hover{
             <a href="https://github.com/rominafont/ChefConnect" target="_blank"><i class="fa-brands fa-github fa-lg" style="color: #fec037;"></i> </a>
         </div>
     </nav> 
-</footer>
+</footer>   
 </body>
 </body>
 </html>
