@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Perfil de Usuario - Instagram Style</title>
+        <link rel="stylesheet" href="styles.css">
+
+        <style>
+
+.header{
+    background-color: #482b19;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100px;
+    padding: 5px, 10%;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+    padding-left: 5%;
+    padding-right: 5%;
+    color: #f6ebd7;
+}
+
+#logo{
+    color: #f6ebd7; 
+    text-decoration: none;
+    font-family: 'Gabarito';
+    font-weight: 900;
+}
+
+.header #logo{
+    height: 70px;
+    width: auto;
+    margin: 2%;
+    margin-right: auto;
+    margin-top: auto;
+    padding: 2%;
+    font-size: 40px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.header .logo:hover{
+    transform: scale(1.2);
+}
+
+.header a{
+    color: #f6ebd7;
+}
+
+.header .menuTop a:hover{
+    color: #7dc08b;
+    transform: scale(1.1);
+}
+
+.header .menuTop{
+    list-style: none;
+    font-size: 18px;
+}
+
+.header .menuTop li{
+    display: inline;
+    padding: 0 20px;
+}
+
+.header .menuTop a{
+   font-size: 700;
+   text-decoration: none; 
+}
+
+.header .btn button{
+    font-size: 18px;
+    font-family: 'Montserrat';
+    width: 170px;
+    color: #f6ebd7;
+    padding: 5%;
+    margin: 10%;
+    margin-left: 5%;
+    background-color: #7dc08b;
+    border: none ;
+    border-radius: 50px;
+    transition: all 0.3 ease 0s;
+    cursor: pointer;
+    box-shadow:  none;
+}
+
+.header .btn button:hover{
+    background-color: #f6ebd7;
+    color: #7dc08b;
+    /*transform: scale(1.1);*/
+}
+
+.imgRounded{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+}           
+        body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f6ebd7;
+}
+
+.profile {
+  max-width: 600px;
+  margin: 20px auto;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-header {
+  text-align: center;
+  padding: 20px;
+}
+
+.profile-picture {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.username {
+  margin: 10px 0 5px;
+  color: #333;
+}
+
+.bio {
+  color: #666;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
+  padding: 10px;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+}   
+
+.profile {
+  /* Estilos de la caja de usuario (tomando como referencia el ejemplo anterior) */
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin:20px
+}
+
+.row {
+  display: flex;
+  justify-content: space-between; /* Espacio entre las cajas */
+  margin-top: 20px; /* Espacio entre las filas */
+}
+
+.box {
+  width: 400px;
+  height: 300px;
+  background-color: #ccc;
+  margin: 5px;
+  border-radius: 10px;
+  /* Otros estilos para las cajas */
+}
+
+.imagencaja1 {
+    width: 100%;
+  height: 100%;
+  object-fit: cover;   
+  border-radius: 10px;
+}
+
+.imagencaja2 {
+    width: 100%;
+  height: 100%;
+  object-fit: cover;   
+  border-radius: 10px;
+}
+
+.imagencaja3 {
+    width: 100%;
+  height: 100%;
+  object-fit: cover;   
+  border-radius: 10px;
+}
+
+.imagencaja4 {
+    width: 100%;
+  height: 100%;
+  object-fit: cover;   
+  border-radius: 10px;
+}
+
+.imagencaja5 {
+    width: 100%;
+  height: 100%;
+  object-fit: cover;   
+  border-radius: 10px;
+}
+
+.imagencaja6 {
+    width: 100%;
+  height: 100%;
+  object-fit: cover;   
+  border-radius: 10px;
+}
+        </style>
+      </head>
+
+
+</head>
+<body>
+    <header class="header"> 
+        <div id="logo">
+            <a href="./index.html">ChefConnect!</a>
+        </div>
+        <nav class="menuTop">
+            <ul>
+                <li><a href="./explorar.html">Explora</a></li>
+                <li><a href="./desafios.html">Desafios</a></li>
+                <li><a href="./eventos.html">Eventos</a></li>
+            </ul>
+            <a href="perfil.html" id="perfil">
+                <img src="img/img27.jpg" alt="Lara Rodríguez" class='imgRounded'></a>
+        </nav>
+    </header>
+    
+    <div class="profile">
+        <div class="profile-header">
+          <img class="profile-picture" src="img/img30.jpg" alt="Imagen de perfil">
+          <h1 class="username">Javier Cruz</h1>
+          <p class="bio">Descripción del usuario...</p>
+        </div>
+        <div class="gallery">
+          <!-- Imágenes de la galería -->
+          <img src="imagen1.jpg" alt="Imagen 1">
+          <img src="imagen2.jpg" alt="Imagen 2">
+          <img src="imagen3.jpg" alt="Imagen 3">
+          <!-- Añade más imágenes según sea necesario -->
+        </div>
+      </div>
+      <div class="profile">
+        <!-- Contenido de la caja de usuario -->
+      </div>
+      
+      <div class="container">
+        <div class="row">
+          <div class="box">
+            <img class="imagencaja1" src="img/img10.jpg" alt="imagen perfil1">
+          </div>
+          <div class="box">
+            <img class="imagencaja2" src="img/img14.jpg" alt="imagen perfil1">
+          </div>
+          <div class="box">
+            <img class="imagencaja3" src="img/img09.jpg" alt="imagen perfil1">
+          </div>
+        </div>
+        <div class="row">
+          <div class="box">
+            <img class="imagencaja4" src="img/img11.jpg" alt="imagen perfil1">
+          </div>
+          <div class="box">
+            <img class="imagencaja5" src="img/img03.jpg" alt="imagen perfil1">
+          </div>
+          <div class="box">
+            <img class="imagencaja6" src="img/img13.jpg" alt="imagen perfil1">
+          </div>
+        </div>
+      </div>
+      
+</body>
+</html>
